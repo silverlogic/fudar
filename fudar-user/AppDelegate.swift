@@ -7,12 +7,14 @@
 //
 
 import UIKit
+import CloverConnector_Hackathon_2017
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    public var cloverConnector:ICloverGoConnector?
+    public var cloverConnectorListener:CloverGoConnectorListener?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
