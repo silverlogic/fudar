@@ -1,0 +1,6 @@
+framework module CloverConnector_Hackathon_2017 {
+  umbrella header "CloverConnector-Hackathon-2017-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -6,6 +6,7 @@ target 'fudar-user' do
   use_frameworks!
 
   # Pods for fudar-user
+  pod 'CloverSDK'  
   pod 'Firebase'
   pod 'Firebase/Auth'
   pod 'Firebase/Database'
@@ -13,6 +14,7 @@ target 'fudar-user' do
   pod 'IQKeyboardManager'
   pod 'SCLAlertView'
   pod 'SVProgressHUD'
+  pod 'CloverConnector-Hackathon-2017', '~> 0.0.4'  
 
   target 'fudar-userTests' do
     inherit! :search_paths
