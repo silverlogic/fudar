@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D073A075F07649481215691 /* Pods_fudar_userTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BA36A52CF643EFBA41CEF39 /* Pods_fudar_userTests.framework */; };
 		224A76561F9BC556004AEB3A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224A76551F9BC556004AEB3A /* AppDelegate.swift */; };
 		224A76581F9BC556004AEB3A /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224A76571F9BC556004AEB3A /* FirstViewController.swift */; };
 		224A765A1F9BC556004AEB3A /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224A76591F9BC556004AEB3A /* SecondViewController.swift */; };
@@ -15,6 +16,8 @@
 		224A76621F9BC556004AEB3A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 224A76601F9BC556004AEB3A /* LaunchScreen.storyboard */; };
 		224A766D1F9BC556004AEB3A /* fudar_userTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224A766C1F9BC556004AEB3A /* fudar_userTests.swift */; };
 		224A76781F9BC556004AEB3A /* fudar_userUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224A76771F9BC556004AEB3A /* fudar_userUITests.swift */; };
+		296445EC81618EF16AFD389D /* Pods_fudar_userUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 782C480331F0E117154EE894 /* Pods_fudar_userUITests.framework */; };
+		C7F8B8AABD48435B780296BE /* Pods_fudar_user.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D4C3B2A95E6E6FBC8066FF6 /* Pods_fudar_user.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,15 @@
 		224A76731F9BC556004AEB3A /* fudar-userUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "fudar-userUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		224A76771F9BC556004AEB3A /* fudar_userUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fudar_userUITests.swift; sourceTree = "<group>"; };
 		224A76791F9BC556004AEB3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		373080FC4C5CCDE44A7C7675 /* Pods-fudar-userTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fudar-userTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-fudar-userTests/Pods-fudar-userTests.debug.xcconfig"; sourceTree = "<group>"; };
+		3BA36A52CF643EFBA41CEF39 /* Pods_fudar_userTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_fudar_userTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D4C3B2A95E6E6FBC8066FF6 /* Pods_fudar_user.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_fudar_user.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		55F4A4319CDCF69E3B698F30 /* Pods-fudar-userUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fudar-userUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-fudar-userUITests/Pods-fudar-userUITests.release.xcconfig"; sourceTree = "<group>"; };
+		5676620A6A6E56C10751498B /* Pods-fudar-user.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fudar-user.debug.xcconfig"; path = "Pods/Target Support Files/Pods-fudar-user/Pods-fudar-user.debug.xcconfig"; sourceTree = "<group>"; };
+		782C480331F0E117154EE894 /* Pods_fudar_userUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_fudar_userUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A58405B6BE82C672B17DFE33 /* Pods-fudar-userTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fudar-userTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-fudar-userTests/Pods-fudar-userTests.release.xcconfig"; sourceTree = "<group>"; };
+		C4B58B137F3C62A75BB497C7 /* Pods-fudar-userUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fudar-userUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-fudar-userUITests/Pods-fudar-userUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		E4FD5422285CC1B0E097958F /* Pods-fudar-user.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fudar-user.release.xcconfig"; path = "Pods/Target Support Files/Pods-fudar-user/Pods-fudar-user.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7F8B8AABD48435B780296BE /* Pods_fudar_user.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D073A075F07649481215691 /* Pods_fudar_userTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				296445EC81618EF16AFD389D /* Pods_fudar_userUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +98,8 @@
 				224A766B1F9BC556004AEB3A /* fudar-userTests */,
 				224A76761F9BC556004AEB3A /* fudar-userUITests */,
 				224A76531F9BC556004AEB3A /* Products */,
+				B7ECD1861FEEDF9E29EA5A2A /* Pods */,
+				6D12BC0585E75E9B8D39A2D6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -128,6 +145,29 @@
 			path = "fudar-userUITests";
 			sourceTree = "<group>";
 		};
+		6D12BC0585E75E9B8D39A2D6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4D4C3B2A95E6E6FBC8066FF6 /* Pods_fudar_user.framework */,
+				3BA36A52CF643EFBA41CEF39 /* Pods_fudar_userTests.framework */,
+				782C480331F0E117154EE894 /* Pods_fudar_userUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B7ECD1861FEEDF9E29EA5A2A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5676620A6A6E56C10751498B /* Pods-fudar-user.debug.xcconfig */,
+				E4FD5422285CC1B0E097958F /* Pods-fudar-user.release.xcconfig */,
+				373080FC4C5CCDE44A7C7675 /* Pods-fudar-userTests.debug.xcconfig */,
+				A58405B6BE82C672B17DFE33 /* Pods-fudar-userTests.release.xcconfig */,
+				C4B58B137F3C62A75BB497C7 /* Pods-fudar-userUITests.debug.xcconfig */,
+				55F4A4319CDCF69E3B698F30 /* Pods-fudar-userUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +175,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 224A767C1F9BC556004AEB3A /* Build configuration list for PBXNativeTarget "fudar-user" */;
 			buildPhases = (
+				66DE50DD2AA99DCD93598794 /* [CP] Check Pods Manifest.lock */,
 				224A764E1F9BC556004AEB3A /* Sources */,
 				224A764F1F9BC556004AEB3A /* Frameworks */,
 				224A76501F9BC556004AEB3A /* Resources */,
+				F89074EE3E90E4B3E55A7404 /* [CP] Embed Pods Frameworks */,
+				E408051C5524A7731D7FC76C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -152,9 +195,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 224A767F1F9BC556004AEB3A /* Build configuration list for PBXNativeTarget "fudar-userTests" */;
 			buildPhases = (
+				2DFD2A5D1CF979A42C348E49 /* [CP] Check Pods Manifest.lock */,
 				224A76641F9BC556004AEB3A /* Sources */,
 				224A76651F9BC556004AEB3A /* Frameworks */,
 				224A76661F9BC556004AEB3A /* Resources */,
+				14AF07292A85A227B6D3B811 /* [CP] Embed Pods Frameworks */,
+				D1FB5FD62868EF75B79E6A4B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -170,9 +216,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 224A76821F9BC556004AEB3A /* Build configuration list for PBXNativeTarget "fudar-userUITests" */;
 			buildPhases = (
+				3C1D8FA80DB9BA6D305A26D1 /* [CP] Check Pods Manifest.lock */,
 				224A766F1F9BC556004AEB3A /* Sources */,
 				224A76701F9BC556004AEB3A /* Frameworks */,
 				224A76711F9BC556004AEB3A /* Resources */,
+				844024E44BEA0F54D2F2A9C0 /* [CP] Embed Pods Frameworks */,
+				6039C419AA500DEAF427C16A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -256,6 +305,170 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		14AF07292A85A227B6D3B811 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-fudar-userTests/Pods-fudar-userTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2DFD2A5D1CF979A42C348E49 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-fudar-userTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3C1D8FA80DB9BA6D305A26D1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-fudar-userUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6039C419AA500DEAF427C16A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-fudar-userUITests/Pods-fudar-userUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		66DE50DD2AA99DCD93598794 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-fudar-user-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		844024E44BEA0F54D2F2A9C0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-fudar-userUITests/Pods-fudar-userUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D1FB5FD62868EF75B79E6A4B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-fudar-userTests/Pods-fudar-userTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E408051C5524A7731D7FC76C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-fudar-user/Pods-fudar-user-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F89074EE3E90E4B3E55A7404 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-fudar-user/Pods-fudar-user-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManager/IQKeyboardManager.framework",
+				"${BUILT_PRODUCTS_DIR}/KYNavigationProgress/KYNavigationProgress.framework",
+				"${BUILT_PRODUCTS_DIR}/SCLAlertView/SCLAlertView.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManager.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KYNavigationProgress.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SCLAlertView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-fudar-user/Pods-fudar-user-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		224A764E1F9BC556004AEB3A /* Sources */ = {
@@ -428,6 +641,7 @@
 		};
 		224A767D1F9BC556004AEB3A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5676620A6A6E56C10751498B /* Pods-fudar-user.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -443,6 +657,7 @@
 		};
 		224A767E1F9BC556004AEB3A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4FD5422285CC1B0E097958F /* Pods-fudar-user.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -458,6 +673,7 @@
 		};
 		224A76801F9BC556004AEB3A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 373080FC4C5CCDE44A7C7675 /* Pods-fudar-userTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -475,6 +691,7 @@
 		};
 		224A76811F9BC556004AEB3A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A58405B6BE82C672B17DFE33 /* Pods-fudar-userTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -492,6 +709,7 @@
 		};
 		224A76831F9BC556004AEB3A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C4B58B137F3C62A75BB497C7 /* Pods-fudar-userUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -508,6 +726,7 @@
 		};
 		224A76841F9BC556004AEB3A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 55F4A4319CDCF69E3B698F30 /* Pods-fudar-userUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
