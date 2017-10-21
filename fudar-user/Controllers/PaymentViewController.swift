@@ -9,7 +9,15 @@
 import UIKit
 
 final class PaymentViewController: UIViewController {
-
+    
+    // MARK: - IBOutlets
+    @IBOutlet weak var deviceConnectedLabel: UILabel!
+    
+    @IBAction func connectDeviceButtonTapped(_ sender: Any) {
+    }
+    
+    @IBOutlet weak var purchaseSaleButtonTapped: UIButton!
+   
     override func viewDidLoad() {
         super.viewDidLoad()
     }
