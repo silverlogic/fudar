@@ -8,7 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		0D073A075F07649481215691 /* Pods_fudar_userTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BA36A52CF643EFBA41CEF39 /* Pods_fudar_userTests.framework */; };
-		22457C0D1F9BE79E00965F3B /* CloverGoConnectorListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22457C0C1F9BE79E00965F3B /* CloverGoConnectorListener.swift */; };
+		220350001F9C1AAF00291AFE /* PurchaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22034FFF1F9C1AAF00291AFE /* PurchaseManager.swift */; };
+		220350021F9C1BA300291AFE /* ReaderManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220350011F9C1BA300291AFE /* ReaderManager.swift */; };
+		220350061F9C3E3700291AFE /* OrderManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220350051F9C3E3700291AFE /* OrderManager.swift */; };
 		224A76561F9BC556004AEB3A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224A76551F9BC556004AEB3A /* AppDelegate.swift */; };
 		224A76581F9BC556004AEB3A /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224A76571F9BC556004AEB3A /* FirstViewController.swift */; };
 		224A765A1F9BC556004AEB3A /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224A76591F9BC556004AEB3A /* SecondViewController.swift */; };
@@ -17,6 +19,21 @@
 		224A76621F9BC556004AEB3A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 224A76601F9BC556004AEB3A /* LaunchScreen.storyboard */; };
 		224A766D1F9BC556004AEB3A /* fudar_userTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224A766C1F9BC556004AEB3A /* fudar_userTests.swift */; };
 		224A76781F9BC556004AEB3A /* fudar_userUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224A76771F9BC556004AEB3A /* fudar_userUITests.swift */; };
+		229C48BA1F9BFC93006AE32C /* CloverGoConnectorListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229C48B41F9BFC93006AE32C /* CloverGoConnectorListener.swift */; };
+		229C48BB1F9BFC93006AE32C /* CloverConnectorListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229C48B51F9BFC93006AE32C /* CloverConnectorListener.swift */; };
+		229C48BC1F9BFC93006AE32C /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229C48B61F9BFC93006AE32C /* Utility.swift */; };
+		229C48DE1F9BFE45006AE32C /* POSItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229C48D31F9BFE44006AE32C /* POSItem.swift */; };
+		229C48DF1F9BFE45006AE32C /* POSOrderItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229C48D41F9BFE44006AE32C /* POSOrderItem.swift */; };
+		229C48E01F9BFE45006AE32C /* POSRefund.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229C48D51F9BFE44006AE32C /* POSRefund.swift */; };
+		229C48E11F9BFE45006AE32C /* POSPayment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229C48D61F9BFE45006AE32C /* POSPayment.swift */; };
+		229C48E21F9BFE45006AE32C /* POSStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229C48D71F9BFE45006AE32C /* POSStore.swift */; };
+		229C48E31F9BFE45006AE32C /* POSNakedRefund.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229C48D81F9BFE45006AE32C /* POSNakedRefund.swift */; };
+		229C48E41F9BFE45006AE32C /* POSCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229C48D91F9BFE45006AE32C /* POSCard.swift */; };
+		229C48E51F9BFE45006AE32C /* POSOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229C48DA1F9BFE45006AE32C /* POSOrder.swift */; };
+		229C48E61F9BFE45006AE32C /* POSLineItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229C48DB1F9BFE45006AE32C /* POSLineItem.swift */; };
+		229C48E71F9BFE45006AE32C /* POSDiscount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229C48DC1F9BFE45006AE32C /* POSDiscount.swift */; };
+		229C48E81F9BFE45006AE32C /* POSExchange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229C48DD1F9BFE45006AE32C /* POSExchange.swift */; };
+		229C48EA1F9BFEB0006AE32C /* CurrencyUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229C48E91F9BFEB0006AE32C /* CurrencyUtils.swift */; };
 		22F0C65B1F9BCF9F00845869 /* PaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F0C65A1F9BCF9F00845869 /* PaymentViewController.swift */; };
 		296445EC81618EF16AFD389D /* Pods_fudar_userUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 782C480331F0E117154EE894 /* Pods_fudar_userUITests.framework */; };
 		C7F8B8AABD48435B780296BE /* Pods_fudar_user.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D4C3B2A95E6E6FBC8066FF6 /* Pods_fudar_user.framework */; };
@@ -40,7 +57,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		22457C0C1F9BE79E00965F3B /* CloverGoConnectorListener.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CloverGoConnectorListener.swift; sourceTree = "<group>"; };
+		22034FFF1F9C1AAF00291AFE /* PurchaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseManager.swift; sourceTree = "<group>"; };
+		220350011F9C1BA300291AFE /* ReaderManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReaderManager.swift; sourceTree = "<group>"; };
+		220350051F9C3E3700291AFE /* OrderManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderManager.swift; sourceTree = "<group>"; };
 		224A76521F9BC556004AEB3A /* fudar-user.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "fudar-user.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		224A76551F9BC556004AEB3A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		224A76571F9BC556004AEB3A /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -55,6 +74,21 @@
 		224A76731F9BC556004AEB3A /* fudar-userUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "fudar-userUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		224A76771F9BC556004AEB3A /* fudar_userUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fudar_userUITests.swift; sourceTree = "<group>"; };
 		224A76791F9BC556004AEB3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		229C48B41F9BFC93006AE32C /* CloverGoConnectorListener.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CloverGoConnectorListener.swift; sourceTree = "<group>"; };
+		229C48B51F9BFC93006AE32C /* CloverConnectorListener.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CloverConnectorListener.swift; sourceTree = "<group>"; };
+		229C48B61F9BFC93006AE32C /* Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
+		229C48D31F9BFE44006AE32C /* POSItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = POSItem.swift; sourceTree = "<group>"; };
+		229C48D41F9BFE44006AE32C /* POSOrderItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = POSOrderItem.swift; sourceTree = "<group>"; };
+		229C48D51F9BFE44006AE32C /* POSRefund.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = POSRefund.swift; sourceTree = "<group>"; };
+		229C48D61F9BFE45006AE32C /* POSPayment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = POSPayment.swift; sourceTree = "<group>"; };
+		229C48D71F9BFE45006AE32C /* POSStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = POSStore.swift; sourceTree = "<group>"; };
+		229C48D81F9BFE45006AE32C /* POSNakedRefund.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = POSNakedRefund.swift; sourceTree = "<group>"; };
+		229C48D91F9BFE45006AE32C /* POSCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = POSCard.swift; sourceTree = "<group>"; };
+		229C48DA1F9BFE45006AE32C /* POSOrder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = POSOrder.swift; sourceTree = "<group>"; };
+		229C48DB1F9BFE45006AE32C /* POSLineItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = POSLineItem.swift; sourceTree = "<group>"; };
+		229C48DC1F9BFE45006AE32C /* POSDiscount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = POSDiscount.swift; sourceTree = "<group>"; };
+		229C48DD1F9BFE45006AE32C /* POSExchange.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = POSExchange.swift; sourceTree = "<group>"; };
+		229C48E91F9BFEB0006AE32C /* CurrencyUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyUtils.swift; sourceTree = "<group>"; };
 		22F0C65A1F9BCF9F00845869 /* PaymentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentViewController.swift; sourceTree = "<group>"; };
 		373080FC4C5CCDE44A7C7675 /* Pods-fudar-userTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fudar-userTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-fudar-userTests/Pods-fudar-userTests.debug.xcconfig"; sourceTree = "<group>"; };
 		3BA36A52CF643EFBA41CEF39 /* Pods_fudar_userTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_fudar_userTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -96,6 +130,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		22034FFE1F9C1A6C00291AFE /* Singletons */ = {
+			isa = PBXGroup;
+			children = (
+				22034FFF1F9C1AAF00291AFE /* PurchaseManager.swift */,
+				220350011F9C1BA300291AFE /* ReaderManager.swift */,
+				220350051F9C3E3700291AFE /* OrderManager.swift */,
+			);
+			path = Singletons;
+			sourceTree = "<group>";
+		};
 		224A76491F9BC556004AEB3A = {
 			isa = PBXGroup;
 			children = (
@@ -122,6 +166,7 @@
 		224A76541F9BC556004AEB3A /* fudar-user */ = {
 			isa = PBXGroup;
 			children = (
+				229C48B01F9BFC8C006AE32C /* Clover */,
 				22F0C65C1F9BCFB200845869 /* Storyboards */,
 				22F0C6591F9BCF5A00845869 /* Views */,
 				22F0C6581F9BCF5200845869 /* Controllers */,
@@ -154,10 +199,32 @@
 			path = "fudar-userUITests";
 			sourceTree = "<group>";
 		};
+		229C48B01F9BFC8C006AE32C /* Clover */ = {
+			isa = PBXGroup;
+			children = (
+				229C48B51F9BFC93006AE32C /* CloverConnectorListener.swift */,
+				229C48B41F9BFC93006AE32C /* CloverGoConnectorListener.swift */,
+				229C48E91F9BFEB0006AE32C /* CurrencyUtils.swift */,
+				229C48B61F9BFC93006AE32C /* Utility.swift */,
+			);
+			path = Clover;
+			sourceTree = "<group>";
+		};
 		22F0C6571F9BCF4700845869 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				22457C0C1F9BE79E00965F3B /* CloverGoConnectorListener.swift */,
+				22034FFE1F9C1A6C00291AFE /* Singletons */,
+				229C48D91F9BFE45006AE32C /* POSCard.swift */,
+				229C48DC1F9BFE45006AE32C /* POSDiscount.swift */,
+				229C48DD1F9BFE45006AE32C /* POSExchange.swift */,
+				229C48D31F9BFE44006AE32C /* POSItem.swift */,
+				229C48DB1F9BFE45006AE32C /* POSLineItem.swift */,
+				229C48D81F9BFE45006AE32C /* POSNakedRefund.swift */,
+				229C48DA1F9BFE45006AE32C /* POSOrder.swift */,
+				229C48D41F9BFE44006AE32C /* POSOrderItem.swift */,
+				229C48D61F9BFE45006AE32C /* POSPayment.swift */,
+				229C48D51F9BFE44006AE32C /* POSRefund.swift */,
+				229C48D71F9BFE45006AE32C /* POSStore.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -535,11 +602,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				220350061F9C3E3700291AFE /* OrderManager.swift in Sources */,
+				229C48E41F9BFE45006AE32C /* POSCard.swift in Sources */,
+				229C48E21F9BFE45006AE32C /* POSStore.swift in Sources */,
+				229C48BC1F9BFC93006AE32C /* Utility.swift in Sources */,
+				229C48DE1F9BFE45006AE32C /* POSItem.swift in Sources */,
 				224A765A1F9BC556004AEB3A /* SecondViewController.swift in Sources */,
+				229C48E61F9BFE45006AE32C /* POSLineItem.swift in Sources */,
+				229C48DF1F9BFE45006AE32C /* POSOrderItem.swift in Sources */,
+				220350021F9C1BA300291AFE /* ReaderManager.swift in Sources */,
+				229C48E31F9BFE45006AE32C /* POSNakedRefund.swift in Sources */,
+				229C48E71F9BFE45006AE32C /* POSDiscount.swift in Sources */,
 				224A76561F9BC556004AEB3A /* AppDelegate.swift in Sources */,
+				229C48E11F9BFE45006AE32C /* POSPayment.swift in Sources */,
+				229C48BA1F9BFC93006AE32C /* CloverGoConnectorListener.swift in Sources */,
 				224A76581F9BC556004AEB3A /* FirstViewController.swift in Sources */,
-				22457C0D1F9BE79E00965F3B /* CloverGoConnectorListener.swift in Sources */,
+				229C48E51F9BFE45006AE32C /* POSOrder.swift in Sources */,
+				220350001F9C1AAF00291AFE /* PurchaseManager.swift in Sources */,
+				229C48BB1F9BFC93006AE32C /* CloverConnectorListener.swift in Sources */,
+				229C48E01F9BFE45006AE32C /* POSRefund.swift in Sources */,
+				229C48EA1F9BFEB0006AE32C /* CurrencyUtils.swift in Sources */,
 				22F0C65B1F9BCF9F00845869 /* PaymentViewController.swift in Sources */,
+				229C48E81F9BFE45006AE32C /* POSExchange.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
