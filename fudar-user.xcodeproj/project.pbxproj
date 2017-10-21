@@ -16,6 +16,7 @@
 		224A76621F9BC556004AEB3A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 224A76601F9BC556004AEB3A /* LaunchScreen.storyboard */; };
 		224A766D1F9BC556004AEB3A /* fudar_userTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224A766C1F9BC556004AEB3A /* fudar_userTests.swift */; };
 		224A76781F9BC556004AEB3A /* fudar_userUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224A76771F9BC556004AEB3A /* fudar_userUITests.swift */; };
+		22F0C65B1F9BCF9F00845869 /* PaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F0C65A1F9BCF9F00845869 /* PaymentViewController.swift */; };
 		296445EC81618EF16AFD389D /* Pods_fudar_userUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 782C480331F0E117154EE894 /* Pods_fudar_userUITests.framework */; };
 		C7F8B8AABD48435B780296BE /* Pods_fudar_user.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D4C3B2A95E6E6FBC8066FF6 /* Pods_fudar_user.framework */; };
 /* End PBXBuildFile section */
@@ -52,6 +53,7 @@
 		224A76731F9BC556004AEB3A /* fudar-userUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "fudar-userUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		224A76771F9BC556004AEB3A /* fudar_userUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fudar_userUITests.swift; sourceTree = "<group>"; };
 		224A76791F9BC556004AEB3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		22F0C65A1F9BCF9F00845869 /* PaymentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentViewController.swift; sourceTree = "<group>"; };
 		373080FC4C5CCDE44A7C7675 /* Pods-fudar-userTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fudar-userTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-fudar-userTests/Pods-fudar-userTests.debug.xcconfig"; sourceTree = "<group>"; };
 		3BA36A52CF643EFBA41CEF39 /* Pods_fudar_userTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_fudar_userTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D4C3B2A95E6E6FBC8066FF6 /* Pods_fudar_user.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_fudar_user.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -116,10 +118,13 @@
 		224A76541F9BC556004AEB3A /* fudar-user */ = {
 			isa = PBXGroup;
 			children = (
+				22F0C65C1F9BCFB200845869 /* Storyboards */,
+				22F0C6591F9BCF5A00845869 /* Views */,
+				22F0C6581F9BCF5200845869 /* Controllers */,
+				22F0C6571F9BCF4700845869 /* Models */,
 				224A76551F9BC556004AEB3A /* AppDelegate.swift */,
 				224A76571F9BC556004AEB3A /* FirstViewController.swift */,
 				224A76591F9BC556004AEB3A /* SecondViewController.swift */,
-				224A765B1F9BC556004AEB3A /* Main.storyboard */,
 				224A765E1F9BC556004AEB3A /* Assets.xcassets */,
 				224A76601F9BC556004AEB3A /* LaunchScreen.storyboard */,
 				224A76631F9BC556004AEB3A /* Info.plist */,
@@ -143,6 +148,36 @@
 				224A76791F9BC556004AEB3A /* Info.plist */,
 			);
 			path = "fudar-userUITests";
+			sourceTree = "<group>";
+		};
+		22F0C6571F9BCF4700845869 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		22F0C6581F9BCF5200845869 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				22F0C65A1F9BCF9F00845869 /* PaymentViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		22F0C6591F9BCF5A00845869 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		22F0C65C1F9BCFB200845869 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				224A765B1F9BC556004AEB3A /* Main.storyboard */,
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 		6D12BC0585E75E9B8D39A2D6 /* Frameworks */ = {
@@ -448,13 +483,11 @@
 				"${PODS_ROOT}/CLVGoSDK/CloverGoReaderSDK.framework",
 				"${PODS_ROOT}/CLVGoSDK/CloverGoLogger.framework",
 				"${BUILT_PRODUCTS_DIR}/CloverConnector-Hackathon-2017/CloverConnector_Hackathon_2017.framework",
-				"${BUILT_PRODUCTS_DIR}/CloverSDK/CloverSDK.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/IQKeyboardManager/IQKeyboardManager.framework",
 				"${BUILT_PRODUCTS_DIR}/KYNavigationProgress/KYNavigationProgress.framework",
 				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
-				"${BUILT_PRODUCTS_DIR}/PromiseKit/PromiseKit.framework",
 				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
 				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/SCLAlertView/SCLAlertView.framework",
@@ -471,13 +504,11 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CloverGoReaderSDK.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CloverGoLogger.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CloverConnector_Hackathon_2017.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CloverSDK.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManager.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KYNavigationProgress.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PromiseKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SCLAlertView.framework",
@@ -502,6 +533,7 @@
 				224A765A1F9BC556004AEB3A /* SecondViewController.swift in Sources */,
 				224A76561F9BC556004AEB3A /* AppDelegate.swift in Sources */,
 				224A76581F9BC556004AEB3A /* FirstViewController.swift in Sources */,
+				22F0C65B1F9BCF9F00845869 /* PaymentViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

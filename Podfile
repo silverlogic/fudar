@@ -6,13 +6,13 @@ target 'fudar-user' do
   use_frameworks!
 
   # Pods for fudar-user
-  pod 'CloverSDK'  
+  # pod 'CloverSDK'  
   pod 'Firebase'
   pod 'Firebase/Auth'
   pod 'Firebase/Database'
   pod 'KYNavigationProgress'
   pod 'IQKeyboardManager'
-  pod 'SCLAlertView'
+  pod 'SCLAlertView', :git => "https://github.com/vikmeup/SCLAlertView-Swift.git"
   pod 'SVProgressHUD'
   pod 'CloverConnector-Hackathon-2017', '~> 0.0.4'  
 

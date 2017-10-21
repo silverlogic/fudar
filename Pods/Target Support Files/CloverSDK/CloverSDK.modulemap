@@ -1,6 +1,0 @@
-framework module CloverSDK {
-  umbrella header "CloverSDK-umbrella.h"
-
-  export *
-  module * { export * }
-}

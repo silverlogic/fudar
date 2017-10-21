@@ -5,29 +5,6 @@ PODS:
     - ObjectMapper (= 3.0.0)
     - Starscream (= 2.1.1)
     - SwiftyJSON (= 3.1.4)
-  - CloverSDK (0.3.1):
-    - CloverSDK/Models (= 0.3.1)
-    - CloverSDK/OAuth (= 0.3.1)
-    - CloverSDK/PromiseKit (= 0.3.1)
-    - CloverSDK/Utils (= 0.3.1)
-  - CloverSDK/Models (0.3.1):
-    - ObjectMapper
-    - SwiftyJSON
-  - CloverSDK/OAuth (0.3.1):
-    - CloverSDK/Models
-    - CloverSDK/Utils
-  - CloverSDK/PromiseKit (0.3.1):
-    - Alamofire
-    - CloverSDK/Models
-    - CloverSDK/Utils
-    - ObjectMapper
-    - PromiseKit/CorePromise
-    - SwiftyJSON
-  - CloverSDK/Utils (0.3.1):
-    - Alamofire
-    - CloverSDK/Models
-    - ObjectMapper
-    - SwiftyJSON
   - CLVGoSDK (3.0.0.8):
     - Alamofire (= 4.2)
     - ObjectMapper (= 3.0.0)
@@ -80,7 +57,6 @@ PODS:
   - nanopb/decode (0.3.8)
   - nanopb/encode (0.3.8)
   - ObjectMapper (3.0.0)
-  - PromiseKit/CorePromise (4.4.3)
   - Realm (2.10.0):
     - Realm/Headers (= 2.10.0)
   - Realm/Headers (2.10.0)
@@ -93,19 +69,26 @@ PODS:
 
 DEPENDENCIES:
   - CloverConnector-Hackathon-2017 (~> 0.0.4)
-  - CloverSDK
   - Firebase
   - Firebase/Auth
   - Firebase/Database
   - IQKeyboardManager
   - KYNavigationProgress
-  - SCLAlertView
+  - SCLAlertView (from `https://github.com/vikmeup/SCLAlertView-Swift.git`)
   - SVProgressHUD
+
+EXTERNAL SOURCES:
+  SCLAlertView:
+    :git: https://github.com/vikmeup/SCLAlertView-Swift.git
+
+CHECKOUT OPTIONS:
+  SCLAlertView:
+    :commit: 85329ce66c297bea79ddef92908ff2040174ccf9
+    :git: https://github.com/vikmeup/SCLAlertView-Swift.git
 
 SPEC CHECKSUMS:
   Alamofire: aa2e09d871c9160ac53c90e83c68064a94e3dfbe
   CloverConnector-Hackathon-2017: 0c908815d875544bf35be30f940911d2bca62867
-  CloverSDK: 90141594089f3589becd06529654dabebe4839bc
   CLVGoSDK: 6a4126c582ee56e89315a54fa05ae422a935b9b2
   Firebase: 3e92884a63e8f76d107c43a67d2ab9071e1eda10
   FirebaseAnalytics: 722b53c7b32bfc7806b06e0093a2f5180d4f2c5a
@@ -120,7 +103,6 @@ SPEC CHECKSUMS:
   leveldb-library: 10fb39c39e243db4af1828441162405bbcec1404
   nanopb: 5601e6bca2dbf1ed831b519092ec110f66982ca3
   ObjectMapper: 92230db59bf8f341a5c3a3cf0b9fbdde3cf0d87f
-  PromiseKit: fbb52a0d154402c57eeb6eccd36dd7724fcf6117
   Realm: 98b3a25643cf6b3e07d2b99fb43fe0eb9c801dec
   RealmSwift: 34073ad3a31232bbaf7c0db898c037940284cba2
   SCLAlertView: 8a14ffc40590c619e183eed2298b854385f30be1
@@ -128,6 +110,6 @@ SPEC CHECKSUMS:
   SVProgressHUD: 59b2d3dabacbd051576d21d32293ca7228dc18b0
   SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
 
-PODFILE CHECKSUM: 5d4ca36b65973d9d144e5a575022173ac34cbdb7
+PODFILE CHECKSUM: 915c8ed5642635e7c674df402414f5903ba9689e
 
 COCOAPODS: 1.3.1
