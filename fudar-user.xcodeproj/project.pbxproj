@@ -18,6 +18,8 @@
 		224A76621F9BC556004AEB3A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 224A76601F9BC556004AEB3A /* LaunchScreen.storyboard */; };
 		224A766D1F9BC556004AEB3A /* fudar_userTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224A766C1F9BC556004AEB3A /* fudar_userTests.swift */; };
 		224A76781F9BC556004AEB3A /* fudar_userUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224A76771F9BC556004AEB3A /* fudar_userUITests.swift */; };
+		229151811F9CE3EA00FCA7C8 /* CreditCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229151801F9CE3EA00FCA7C8 /* CreditCardViewController.swift */; };
+		229B44351F9CD47E00D4935D /* CheckoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229B44341F9CD47E00D4935D /* CheckoutViewController.swift */; };
 		229C48BA1F9BFC93006AE32C /* CloverGoConnectorListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229C48B41F9BFC93006AE32C /* CloverGoConnectorListener.swift */; };
 		229C48BB1F9BFC93006AE32C /* CloverConnectorListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229C48B51F9BFC93006AE32C /* CloverConnectorListener.swift */; };
 		229C48BC1F9BFC93006AE32C /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229C48B61F9BFC93006AE32C /* Utility.swift */; };
@@ -98,6 +100,8 @@
 		224A76731F9BC556004AEB3A /* fudar-userUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "fudar-userUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		224A76771F9BC556004AEB3A /* fudar_userUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fudar_userUITests.swift; sourceTree = "<group>"; };
 		224A76791F9BC556004AEB3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		229151801F9CE3EA00FCA7C8 /* CreditCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCardViewController.swift; sourceTree = "<group>"; };
+		229B44341F9CD47E00D4935D /* CheckoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutViewController.swift; sourceTree = "<group>"; };
 		229C48B41F9BFC93006AE32C /* CloverGoConnectorListener.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CloverGoConnectorListener.swift; sourceTree = "<group>"; };
 		229C48B51F9BFC93006AE32C /* CloverConnectorListener.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CloverConnectorListener.swift; sourceTree = "<group>"; };
 		229C48B61F9BFC93006AE32C /* Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
@@ -299,6 +303,8 @@
 				2634A7201F9C2DEF0001E6F0 /* TruckFeedViewController.swift */,
 				22CEBE131F9C6F56008C7976 /* MapViewController.swift */,
 				22CEBE3B1F9C9C02008C7976 /* MenuViewController.swift */,
+				229B44341F9CD47E00D4935D /* CheckoutViewController.swift */,
+				229151801F9CE3EA00FCA7C8 /* CreditCardViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -660,6 +666,7 @@
 				"${PODS_ROOT}/CLVGoSDK/CloverGoReaderSDK.framework",
 				"${PODS_ROOT}/CLVGoSDK/CloverGoLogger.framework",
 				"${BUILT_PRODUCTS_DIR}/CloverConnector-Hackathon-2017/CloverConnector_Hackathon_2017.framework",
+				"${BUILT_PRODUCTS_DIR}/CreditCardForm/CreditCardForm.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/IQKeyboardManager/IQKeyboardManager.framework",
@@ -672,6 +679,7 @@
 				"${BUILT_PRODUCTS_DIR}/SCLAlertView/SCLAlertView.framework",
 				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/Starscream/Starscream.framework",
+				"${BUILT_PRODUCTS_DIR}/Stripe/Stripe.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 				"${BUILT_PRODUCTS_DIR}/SwipeCellKit/SwipeCellKit.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
@@ -684,6 +692,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CloverGoReaderSDK.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CloverGoLogger.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CloverConnector_Hackathon_2017.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CreditCardForm.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManager.framework",
@@ -696,6 +705,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SCLAlertView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Starscream.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Stripe.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwipeCellKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
@@ -715,6 +725,7 @@
 			files = (
 				220350061F9C3E3700291AFE /* OrderManager.swift in Sources */,
 				229C48E41F9BFE45006AE32C /* POSCard.swift in Sources */,
+				229B44351F9CD47E00D4935D /* CheckoutViewController.swift in Sources */,
 				22CEBE3E1F9C9CA8008C7976 /* MenuTableViewCell.swift in Sources */,
 				229C48E21F9BFE45006AE32C /* POSStore.swift in Sources */,
 				229C48BC1F9BFC93006AE32C /* Utility.swift in Sources */,
@@ -737,6 +748,7 @@
 				229C48EA1F9BFEB0006AE32C /* CurrencyUtils.swift in Sources */,
 				22F0C65B1F9BCF9F00845869 /* PaymentViewController.swift in Sources */,
 				229C48E81F9BFE45006AE32C /* POSExchange.swift in Sources */,
+				229151811F9CE3EA00FCA7C8 /* CreditCardViewController.swift in Sources */,
 				22CEBE141F9C6F56008C7976 /* MapViewController.swift in Sources */,
 				2665F1231F9C0E0800758B07 /* FirebaseManager.swift in Sources */,
 				2665F1371F9C215300758B07 /* SecondViewController.swift in Sources */,

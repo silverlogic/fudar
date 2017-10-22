@@ -9,6 +9,7 @@ PODS:
     - Alamofire (= 4.2)
     - ObjectMapper (= 3.0.0)
     - RealmSwift (= 2.10.0)
+  - CreditCardForm (0.1.3)
   - Firebase (4.4.0):
     - Firebase/Core (= 4.4.0)
   - Firebase/Auth (4.4.0):
@@ -66,12 +67,14 @@ PODS:
     - Realm (= 2.10.0)
   - SCLAlertView (0.7.0)
   - Starscream (2.1.1)
+  - Stripe (11.3.0)
   - SVProgressHUD (2.2.2)
   - SwiftyJSON (3.1.4)
   - SwipeCellKit (2.0.0)
 
 DEPENDENCIES:
   - CloverConnector-Hackathon-2017 (~> 0.0.4)
+  - CreditCardForm
   - Firebase
   - Firebase/Auth
   - Firebase/Database
@@ -80,6 +83,7 @@ DEPENDENCIES:
   - Kingfisher
   - KYNavigationProgress
   - SCLAlertView (from `https://github.com/vikmeup/SCLAlertView-Swift.git`)
+  - Stripe
   - SVProgressHUD
   - SwiftyJSON
   - SwipeCellKit
@@ -97,6 +101,7 @@ SPEC CHECKSUMS:
   Alamofire: aa2e09d871c9160ac53c90e83c68064a94e3dfbe
   CloverConnector-Hackathon-2017: 0c908815d875544bf35be30f940911d2bca62867
   CLVGoSDK: 6a4126c582ee56e89315a54fa05ae422a935b9b2
+  CreditCardForm: 2dd4385c5b5dbff4d29cc02d2002205c0a397ed0
   Firebase: 3e92884a63e8f76d107c43a67d2ab9071e1eda10
   FirebaseAnalytics: 722b53c7b32bfc7806b06e0093a2f5180d4f2c5a
   FirebaseAuth: e0087d479709b20b9613b804704a928d6eafb052
@@ -116,10 +121,11 @@ SPEC CHECKSUMS:
   RealmSwift: 34073ad3a31232bbaf7c0db898c037940284cba2
   SCLAlertView: 8a14ffc40590c619e183eed2298b854385f30be1
   Starscream: 142bd8ef24592d985daee9fa48c936070b85b15f
+  Stripe: 3c86dc18af21e59dd559aa15e83cb501248f9903
   SVProgressHUD: 59b2d3dabacbd051576d21d32293ca7228dc18b0
   SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
   SwipeCellKit: 349c61ffde96ac3ae51c2691a03e421b5b29ee98
 
-PODFILE CHECKSUM: 5e7adcf503d98be97246de26da0ced1b372a34fd
+PODFILE CHECKSUM: d91dc78f499ea02082da96055604c1ce4241844c
 
 COCOAPODS: 1.3.1

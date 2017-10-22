@@ -7,6 +7,7 @@ target 'fudar-user' do
 
   # Pods for fudar-user
   # pod 'CloverSDK'  
+  pod "CreditCardForm"  
   pod 'Firebase'
   pod 'Firebase/Auth'
   pod 'Firebase/Database'
@@ -20,6 +21,7 @@ target 'fudar-user' do
   pod 'SwiftyJSON'
   pod 'SwipeCellKit'  
   pod 'Kingfisher'
+  pod 'Stripe'
 
   target 'fudar-userTests' do
     inherit! :search_paths

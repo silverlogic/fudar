@@ -50,7 +50,7 @@
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Truck Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7IN-S9-0z1">
                                                     <rect key="frame" x="86" y="8" width="212" height="22"/>
                                                     <fontDescription key="fontDescription" name="Dosis-Bold" family="Dosis" pointSize="17"/>
-                                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Food Kind- American" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mLm-sg-S92">
@@ -347,11 +347,260 @@
                     </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="0wQ-iT-QPC" id="ESq-Ms-BTf"/>
+                        <segue destination="cVV-x0-UyF" kind="show" identifier="goToCheckoutSegue" id="uUx-fZ-5Ll"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fwq-H7-j2R" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1892" y="1070.9145427286358"/>
+        </scene>
+        <!--Checkout-->
+        <scene sceneID="r9Z-zz-4sH">
+            <objects>
+                <viewController id="cVV-x0-UyF" customClass="CheckoutViewController" customModule="fudar_user" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="api-7t-Frb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="lui-oq-7wc">
+                                <rect key="frame" x="0.0" y="104" width="375" height="278"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MenuTableViewCell" rowHeight="75" id="gbV-d1-vyA" customClass="MenuTableViewCell" customModule="fudar_user" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="75"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="gbV-d1-vyA" id="LGa-Xo-3Ab">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="74.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A2j-Zj-lHn">
+                                                    <rect key="frame" x="8" y="0.0" width="42" height="74.5"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="42" id="Tjt-Ni-MZC"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="Dosis-Bold" family="Dosis" pointSize="24"/>
+                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qbE-Rv-cmr">
+                                                    <rect key="frame" x="73" y="0.0" width="235" height="74.5"/>
+                                                    <fontDescription key="fontDescription" name="Dosis-Bold" family="Dosis" pointSize="20"/>
+                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$7" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="alN-BS-AAf">
+                                                    <rect key="frame" x="308" y="0.0" width="59" height="74.5"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="59" id="jlR-Lg-q8X"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="Dosis-Bold" family="Dosis" pointSize="24"/>
+                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="A2j-Zj-lHn" firstAttribute="leading" secondItem="LGa-Xo-3Ab" secondAttribute="leading" constant="8" id="4DL-ka-Wxf"/>
+                                                <constraint firstAttribute="bottom" secondItem="alN-BS-AAf" secondAttribute="bottom" id="7Ya-0X-U9f"/>
+                                                <constraint firstItem="A2j-Zj-lHn" firstAttribute="top" secondItem="LGa-Xo-3Ab" secondAttribute="top" id="MwZ-pY-AYP"/>
+                                                <constraint firstAttribute="bottom" secondItem="A2j-Zj-lHn" secondAttribute="bottom" id="NJn-Mc-xJ5"/>
+                                                <constraint firstItem="alN-BS-AAf" firstAttribute="top" secondItem="LGa-Xo-3Ab" secondAttribute="top" id="WJI-Ue-HmN"/>
+                                                <constraint firstAttribute="trailing" secondItem="alN-BS-AAf" secondAttribute="trailing" constant="8" id="XD6-a7-6Yn"/>
+                                                <constraint firstItem="qbE-Rv-cmr" firstAttribute="leading" secondItem="A2j-Zj-lHn" secondAttribute="trailing" constant="23" id="c0C-8U-yEV"/>
+                                                <constraint firstAttribute="bottom" secondItem="qbE-Rv-cmr" secondAttribute="bottom" id="gv0-ZV-kOb"/>
+                                                <constraint firstItem="qbE-Rv-cmr" firstAttribute="top" secondItem="LGa-Xo-3Ab" secondAttribute="top" id="pmJ-Bu-Zh3"/>
+                                                <constraint firstItem="alN-BS-AAf" firstAttribute="leading" secondItem="qbE-Rv-cmr" secondAttribute="trailing" id="pod-D3-UnL"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="menuItemPriceLabel" destination="alN-BS-AAf" id="1jT-Ac-KkI"/>
+                                            <outlet property="menuItemTitleLabel" destination="qbE-Rv-cmr" id="NI4-KK-2cy"/>
+                                            <outlet property="menuPurchaseCountLabel" destination="A2j-Zj-lHn" id="EKt-je-rpV"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="From Wacky Mike's Eats" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m5z-en-uhX">
+                                <rect key="frame" x="16" y="64" width="359" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="NZu-bS-dSq"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Dosis-Bold" family="Dosis" pointSize="19"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gDA-hy-Eg9">
+                                <rect key="frame" x="16" y="395" width="343" height="135"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sub Total:  $37.00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ySB-cx-5sn">
+                                        <rect key="frame" x="8" y="8" width="327" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="f8e-cR-PmS"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Dosis-Medium" family="Dosis" pointSize="17"/>
+                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tax: $2.22" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e3R-H7-meL">
+                                        <rect key="frame" x="8" y="37" width="327" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="HId-8k-yf0"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Dosis-Medium" family="Dosis" pointSize="17"/>
+                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No Coupon Applied" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SjT-mh-RD4">
+                                        <rect key="frame" x="8" y="66" width="327" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="IPk-3W-4cr"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Dosis-Regular" family="Dosis" pointSize="14"/>
+                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TOTAL: $39.22" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pUZ-eY-cFI">
+                                        <rect key="frame" x="8" y="96" width="327" height="32"/>
+                                        <fontDescription key="fontDescription" name="Dosis-Bold" family="Dosis" pointSize="22"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="SjT-mh-RD4" secondAttribute="trailing" constant="8" id="6QJ-H1-hpM"/>
+                                    <constraint firstItem="pUZ-eY-cFI" firstAttribute="top" secondItem="SjT-mh-RD4" secondAttribute="bottom" constant="9" id="TLQ-jn-59a"/>
+                                    <constraint firstItem="e3R-H7-meL" firstAttribute="leading" secondItem="gDA-hy-Eg9" secondAttribute="leading" constant="8" id="Xwk-5W-x3I"/>
+                                    <constraint firstItem="SjT-mh-RD4" firstAttribute="leading" secondItem="gDA-hy-Eg9" secondAttribute="leading" constant="8" id="YHb-dT-1sv"/>
+                                    <constraint firstAttribute="trailing" secondItem="pUZ-eY-cFI" secondAttribute="trailing" constant="8" id="Zw5-Cz-Vqx"/>
+                                    <constraint firstItem="e3R-H7-meL" firstAttribute="top" secondItem="ySB-cx-5sn" secondAttribute="bottom" constant="8" id="adw-7Z-yU7"/>
+                                    <constraint firstItem="ySB-cx-5sn" firstAttribute="top" secondItem="gDA-hy-Eg9" secondAttribute="top" constant="8" id="g0q-XI-wgS"/>
+                                    <constraint firstItem="ySB-cx-5sn" firstAttribute="leading" secondItem="gDA-hy-Eg9" secondAttribute="leading" constant="8" id="hIs-W4-ise"/>
+                                    <constraint firstAttribute="height" constant="135" id="nIy-wg-QMh"/>
+                                    <constraint firstAttribute="bottom" secondItem="pUZ-eY-cFI" secondAttribute="bottom" constant="7" id="nPS-rI-Zdx"/>
+                                    <constraint firstItem="SjT-mh-RD4" firstAttribute="top" secondItem="e3R-H7-meL" secondAttribute="bottom" constant="8" id="rmK-a6-ljV"/>
+                                    <constraint firstAttribute="trailing" secondItem="e3R-H7-meL" secondAttribute="trailing" constant="8" id="sqd-gI-UN6"/>
+                                    <constraint firstItem="pUZ-eY-cFI" firstAttribute="leading" secondItem="gDA-hy-Eg9" secondAttribute="leading" constant="8" id="vjv-1n-Hxb"/>
+                                    <constraint firstAttribute="trailing" secondItem="ySB-cx-5sn" secondAttribute="trailing" constant="8" id="zTN-M8-0Eu"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fH7-mt-1h9">
+                                <rect key="frame" x="16" y="603" width="343" height="44"/>
+                                <color key="backgroundColor" red="1" green="0.16078431372549018" blue="0.396078431372549" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="Dl0-I4-Lrc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Dosis-Bold" family="Dosis" pointSize="17"/>
+                                <state key="normal" title="PAY IN PERSON">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="confirmOrderButtonTapped:" destination="cVV-x0-UyF" eventType="touchUpInside" id="bXS-pM-THe"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I0S-Y4-Haq">
+                                <rect key="frame" x="16" y="551" width="343" height="44"/>
+                                <color key="backgroundColor" red="1" green="0.16078431369999999" blue="0.39607843139999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="XAv-LI-NBz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Dosis-Bold" family="Dosis" pointSize="17"/>
+                                <state key="normal" title="PAY NOW">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="oFt-RL-0mF" kind="show" id="xO3-jf-Bkm"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="lui-oq-7wc" firstAttribute="leading" secondItem="uAy-6B-MwR" secondAttribute="leading" id="22o-Qi-bj4"/>
+                            <constraint firstItem="uAy-6B-MwR" firstAttribute="trailing" secondItem="gDA-hy-Eg9" secondAttribute="trailing" constant="16" id="3A0-7Q-awO"/>
+                            <constraint firstItem="uAy-6B-MwR" firstAttribute="trailing" secondItem="I0S-Y4-Haq" secondAttribute="trailing" constant="16" id="4LZ-Y7-8bQ"/>
+                            <constraint firstItem="fH7-mt-1h9" firstAttribute="top" secondItem="I0S-Y4-Haq" secondAttribute="bottom" constant="8" id="5hl-Zr-ZbZ"/>
+                            <constraint firstItem="m5z-en-uhX" firstAttribute="leading" secondItem="uAy-6B-MwR" secondAttribute="leading" constant="16" id="A3y-dB-p8c"/>
+                            <constraint firstItem="I0S-Y4-Haq" firstAttribute="leading" secondItem="uAy-6B-MwR" secondAttribute="leading" constant="16" id="Bob-IW-Pyb"/>
+                            <constraint firstItem="uAy-6B-MwR" firstAttribute="trailing" secondItem="fH7-mt-1h9" secondAttribute="trailing" constant="16" id="CNL-rS-ulS"/>
+                            <constraint firstItem="fH7-mt-1h9" firstAttribute="leading" secondItem="uAy-6B-MwR" secondAttribute="leading" constant="16" id="FZD-eP-UcF"/>
+                            <constraint firstItem="I0S-Y4-Haq" firstAttribute="top" secondItem="gDA-hy-Eg9" secondAttribute="bottom" constant="21" id="KZb-DF-OUH"/>
+                            <constraint firstItem="gDA-hy-Eg9" firstAttribute="leading" secondItem="uAy-6B-MwR" secondAttribute="leading" constant="16" id="LYJ-Px-9xM"/>
+                            <constraint firstItem="uAy-6B-MwR" firstAttribute="bottom" secondItem="fH7-mt-1h9" secondAttribute="bottom" constant="20" id="Uhb-tz-V4o"/>
+                            <constraint firstItem="gDA-hy-Eg9" firstAttribute="top" secondItem="lui-oq-7wc" secondAttribute="bottom" constant="13" id="opj-yU-6ro"/>
+                            <constraint firstItem="m5z-en-uhX" firstAttribute="top" secondItem="uAy-6B-MwR" secondAttribute="top" id="rWx-Kk-mXZ"/>
+                            <constraint firstItem="lui-oq-7wc" firstAttribute="trailing" secondItem="uAy-6B-MwR" secondAttribute="trailing" id="sQo-Le-SdY"/>
+                            <constraint firstItem="m5z-en-uhX" firstAttribute="trailing" secondItem="uAy-6B-MwR" secondAttribute="trailing" id="t8j-sv-mOW"/>
+                            <constraint firstItem="lui-oq-7wc" firstAttribute="top" secondItem="m5z-en-uhX" secondAttribute="bottom" constant="8" id="xvZ-8o-IWa"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="uAy-6B-MwR"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Checkout" id="TWu-JD-66a">
+                        <barButtonItem key="rightBarButtonItem" systemItem="cancel" id="SdP-aB-6Uf">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <action selector="cancelButtonPressed:" destination="cVV-x0-UyF" id="VOP-gH-psa"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="subTotalLabel" destination="ySB-cx-5sn" id="a7m-Jz-8t8"/>
+                        <outlet property="tableView" destination="lui-oq-7wc" id="N1q-nD-J99"/>
+                        <outlet property="taxLabel" destination="e3R-H7-meL" id="vax-Xk-h7P"/>
+                        <outlet property="totalLabel" destination="pUZ-eY-cFI" id="MZG-g8-jdR"/>
+                        <outlet property="truckNameLabel" destination="m5z-en-uhX" id="XlX-Ht-oHE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BSv-zV-iuH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2572" y="1070.9145427286358"/>
+        </scene>
+        <!--Add Credit Card-->
+        <scene sceneID="kUB-Nz-oz3">
+            <objects>
+                <viewController id="oFt-RL-0mF" customClass="CreditCardViewController" customModule="fudar_user" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4TZ-oS-al0">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MqH-0l-JhN" customClass="CreditCardFormView" customModule="CreditCardForm">
+                                <rect key="frame" x="37" y="233" width="300" height="200"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="Eeg-cB-zkq"/>
+                                    <constraint firstAttribute="width" constant="300" id="SfJ-L6-J7x"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v4d-cN-zYd">
+                                <rect key="frame" x="26" y="562" width="322" height="44"/>
+                                <color key="backgroundColor" red="1" green="0.16078431369999999" blue="0.39607843139999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Dosis-Bold" family="Dosis" pointSize="17"/>
+                                <state key="normal" title="Purchase Order">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="purchaseOrderButtonTapped:" destination="oFt-RL-0mF" eventType="touchUpInside" id="6cJ-im-QTV"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="6MB-Vq-nDr" firstAttribute="bottom" secondItem="v4d-cN-zYd" secondAttribute="bottom" constant="61" id="CKs-s0-4Kw"/>
+                            <constraint firstItem="MqH-0l-JhN" firstAttribute="centerX" secondItem="4TZ-oS-al0" secondAttribute="centerX" id="LHq-xR-jNM"/>
+                            <constraint firstItem="v4d-cN-zYd" firstAttribute="leading" secondItem="6MB-Vq-nDr" secondAttribute="leading" constant="26" id="Rg6-eg-jxE"/>
+                            <constraint firstItem="v4d-cN-zYd" firstAttribute="top" secondItem="MqH-0l-JhN" secondAttribute="bottom" constant="129" id="VTL-FY-PBU"/>
+                            <constraint firstItem="MqH-0l-JhN" firstAttribute="centerY" secondItem="4TZ-oS-al0" secondAttribute="centerY" id="fHd-1I-f65"/>
+                            <constraint firstItem="6MB-Vq-nDr" firstAttribute="trailing" secondItem="v4d-cN-zYd" secondAttribute="trailing" constant="27" id="mBV-RQ-kAS"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6MB-Vq-nDr"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Add Credit Card" id="aAg-qn-3r8"/>
+                    <connections>
+                        <outlet property="cardFormView" destination="MqH-0l-JhN" id="GyA-9a-mSI"/>
+                        <outlet property="purchaseOrderButton" destination="v4d-cN-zYd" id="mbs-mI-vEk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nG3-ee-xOl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3287" y="1071"/>
         </scene>
         <!--Nearby Businesses-->
         <scene sceneID="9jc-yL-SZy">
