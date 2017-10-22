@@ -19,6 +19,7 @@
 		224A766D1F9BC556004AEB3A /* fudar_userTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224A766C1F9BC556004AEB3A /* fudar_userTests.swift */; };
 		224A76781F9BC556004AEB3A /* fudar_userUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224A76771F9BC556004AEB3A /* fudar_userUITests.swift */; };
 		229151811F9CE3EA00FCA7C8 /* CreditCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229151801F9CE3EA00FCA7C8 /* CreditCardViewController.swift */; };
+		229151871F9D0C3200FCA7C8 /* CodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229151861F9D0C3200FCA7C8 /* CodeViewController.swift */; };
 		229B44351F9CD47E00D4935D /* CheckoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229B44341F9CD47E00D4935D /* CheckoutViewController.swift */; };
 		229C48BA1F9BFC93006AE32C /* CloverGoConnectorListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229C48B41F9BFC93006AE32C /* CloverGoConnectorListener.swift */; };
 		229C48BB1F9BFC93006AE32C /* CloverConnectorListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229C48B51F9BFC93006AE32C /* CloverConnectorListener.swift */; };
@@ -101,6 +102,7 @@
 		224A76771F9BC556004AEB3A /* fudar_userUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fudar_userUITests.swift; sourceTree = "<group>"; };
 		224A76791F9BC556004AEB3A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		229151801F9CE3EA00FCA7C8 /* CreditCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCardViewController.swift; sourceTree = "<group>"; };
+		229151861F9D0C3200FCA7C8 /* CodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeViewController.swift; sourceTree = "<group>"; };
 		229B44341F9CD47E00D4935D /* CheckoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutViewController.swift; sourceTree = "<group>"; };
 		229C48B41F9BFC93006AE32C /* CloverGoConnectorListener.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CloverGoConnectorListener.swift; sourceTree = "<group>"; };
 		229C48B51F9BFC93006AE32C /* CloverConnectorListener.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CloverConnectorListener.swift; sourceTree = "<group>"; };
@@ -305,6 +307,7 @@
 				22CEBE3B1F9C9C02008C7976 /* MenuViewController.swift */,
 				229B44341F9CD47E00D4935D /* CheckoutViewController.swift */,
 				229151801F9CE3EA00FCA7C8 /* CreditCardViewController.swift */,
+				229151861F9D0C3200FCA7C8 /* CodeViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -756,6 +759,7 @@
 				267209A01F9C3D1A00B1ED26 /* BaseImageView.swift in Sources */,
 				2665F12E1F9C193C00758B07 /* UIFont+Extension.swift in Sources */,
 				22CEBE401F9C9F03008C7976 /* Menu.swift in Sources */,
+				229151871F9D0C3200FCA7C8 /* CodeViewController.swift in Sources */,
 				268FCE781F9C3853001CA3E0 /* TruckTableViewCell.swift in Sources */,
 				2665F1301F9C19A000758B07 /* Constants.swift in Sources */,
 				22CEBE3C1F9C9C02008C7976 /* MenuViewController.swift in Sources */,

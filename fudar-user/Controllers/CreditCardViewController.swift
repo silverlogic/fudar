@@ -32,7 +32,7 @@ class CreditCardViewController: UIViewController, STPPaymentCardTextFieldDelegat
         PurchaseManager.shared.processOrderForStore(isKeyedTransaction: true) { success in
             if success {
                 SCLAlertView().showInfo("Thank you for your purchase", subTitle: "Please see the cashier at the window.")
-                self.navigationController?.popToRootViewController(animated: true)
+                performSegue(withIdentifier: "goToConfirmation", sender: self)
             } else {
                 SCLAlertView().showInfo("Error", subTitle: "Please see the cashier at the window.")
             }

@@ -53,6 +53,7 @@ extension MenuViewController {
         if segue.identifier == "goToCheckoutSegue" {
             guard let controller = segue.destination as? CheckoutViewController else { return }
             controller.menus = checkoutItems
+            checkoutItems.removeAll()
         }
     }
 }

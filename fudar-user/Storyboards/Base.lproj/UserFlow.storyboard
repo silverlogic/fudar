@@ -596,11 +596,85 @@
                     <connections>
                         <outlet property="cardFormView" destination="MqH-0l-JhN" id="GyA-9a-mSI"/>
                         <outlet property="purchaseOrderButton" destination="v4d-cN-zYd" id="mbs-mI-vEk"/>
+                        <segue destination="xlT-1z-Vst" kind="show" identifier="goToConfirmation" id="7kT-6S-ebm"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nG3-ee-xOl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3287" y="1071"/>
+        </scene>
+        <!--Confirmation-->
+        <scene sceneID="faC-pS-xzC">
+            <objects>
+                <viewController id="xlT-1z-Vst" customClass="CodeViewController" customModule="fudar_user" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="YhB-B3-pJA">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon-qrcode" translatesAutoresizingMaskIntoConstraints="NO" id="qIh-Op-R2f">
+                                <rect key="frame" x="67" y="89" width="240" height="240"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="240" id="eTa-V0-Ptt"/>
+                                    <constraint firstAttribute="width" constant="240" id="xFs-wc-a5m"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wait Time" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c4Q-bR-a9Y">
+                                <rect key="frame" x="67" y="386" width="240" height="56"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="PQs-lh-tco"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Dosis-Bold" family="Dosis" pointSize="28"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="15:45" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VIo-iL-Eo2">
+                                <rect key="frame" x="67" y="450" width="240" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="jEo-FA-DEW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Dosis-Medium" family="Dosis" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ttc-43-qdG">
+                                <rect key="frame" x="16" y="603" width="343" height="44"/>
+                                <color key="backgroundColor" red="1" green="0.16078431369999999" blue="0.39607843139999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="343" id="m7T-Rx-JdV"/>
+                                    <constraint firstAttribute="height" constant="44" id="wOh-lF-fum"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Dosis-Bold" family="Dosis" pointSize="17"/>
+                                <state key="normal" title="Return">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="returnButtonTapped:" destination="xlT-1z-Vst" eventType="touchUpInside" id="dD5-o6-Eby"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="rV8-iX-7nW" firstAttribute="trailing" secondItem="VIo-iL-Eo2" secondAttribute="trailing" constant="68" id="0pN-5a-RW6"/>
+                            <constraint firstItem="VIo-iL-Eo2" firstAttribute="top" secondItem="c4Q-bR-a9Y" secondAttribute="bottom" constant="8" id="7ZX-B6-YB9"/>
+                            <constraint firstItem="rV8-iX-7nW" firstAttribute="trailing" secondItem="c4Q-bR-a9Y" secondAttribute="trailing" constant="68" id="AiI-ry-RL1"/>
+                            <constraint firstItem="VIo-iL-Eo2" firstAttribute="leading" secondItem="rV8-iX-7nW" secondAttribute="leading" constant="67" id="GDg-a6-3bT"/>
+                            <constraint firstItem="c4Q-bR-a9Y" firstAttribute="top" secondItem="qIh-Op-R2f" secondAttribute="bottom" constant="57" id="JRe-vl-DTD"/>
+                            <constraint firstItem="Ttc-43-qdG" firstAttribute="leading" secondItem="rV8-iX-7nW" secondAttribute="leading" constant="16" id="QbI-YR-CSQ"/>
+                            <constraint firstItem="qIh-Op-R2f" firstAttribute="top" secondItem="rV8-iX-7nW" secondAttribute="top" constant="25" id="XkH-Fa-tbl"/>
+                            <constraint firstItem="qIh-Op-R2f" firstAttribute="leading" secondItem="rV8-iX-7nW" secondAttribute="leading" constant="67" id="sAQ-pC-pgl"/>
+                            <constraint firstItem="c4Q-bR-a9Y" firstAttribute="leading" secondItem="rV8-iX-7nW" secondAttribute="leading" constant="67" id="sJC-DR-W9R"/>
+                            <constraint firstItem="rV8-iX-7nW" firstAttribute="bottom" secondItem="Ttc-43-qdG" secondAttribute="bottom" constant="20" id="sQg-6c-SjF"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="rV8-iX-7nW"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Confirmation" id="0wm-P3-lLO"/>
+                    <connections>
+                        <outlet property="timerLabel" destination="VIo-iL-Eo2" id="K9b-Ct-hQg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NNN-LC-77U" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4016.8000000000002" y="1070.9145427286358"/>
         </scene>
         <!--Nearby Businesses-->
         <scene sceneID="9jc-yL-SZy">
@@ -889,6 +963,7 @@
     </scenes>
     <resources>
         <image name="Layers100X" width="16" height="16"/>
+        <image name="icon-qrcode" width="1072" height="1072"/>
         <image name="locationIcon" width="20" height="29"/>
         <image name="login-facebook" width="16" height="16"/>
     </resources>
