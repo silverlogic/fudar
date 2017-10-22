@@ -23,7 +23,9 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewD
         mapView.userTrackingMode = .followWithHeading
         locationManager = CLLocationManager()
         locationManager!.delegate = self
-        
+        self.navigationController?.navigationBar.isHidden = false
+        self.navigationController?.navigationItem.title = "Nearby Businesses"
+
         if CLLocationManager.authorizationStatus() == .authorizedWhenInUse {
             locationManager!.startUpdatingLocation()
         } else {
@@ -117,25 +119,43 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewD
         if annotation is MKUserLocation {
             return nil
         }
-        let reuseId = "pin"
-        var pinView = mapView.dequeueReusableAnnotationView(withIdentifier: reuseId) as? MKPinAnnotationView
-        if pinView == nil {
-            pinView = MKPinAnnotationView(annotation: annotation, reuseIdentifier: reuseId)
-            pinView!.canShowCallout = true
-            pinView!.pinTintColor = .purple
-            
-            //next line sets a button for the right side of the callout...
-            pinView!.rightCalloutAccessoryView = UIButton(type: .detailDisclosure)
-        } else {
-            pinView!.annotation = annotation
+        if !(annotation is MKPointAnnotation) {
+            return nil
         }
-        return pinView
+        
+        var annotationView = mapView.dequeueReusableAnnotationView(withIdentifier: "demo")
+        if annotationView == nil {
+            annotationView = MKAnnotationView(annotation: annotation, reuseIdentifier: "demo")
+            annotationView!.canShowCallout = true
+            annotationView?.rightCalloutAccessoryView = UIButton(type: .detailDisclosure)
+        }
+        else {
+            annotationView!.annotation = annotation
+        }
+        
+        annotationView!.image = UIImage(named: "icon-annotation")
+        
+        return annotationView
+//        let reuseId = "pin"
+//        var pinView = mapView.dequeueReusableAnnotationView(withIdentifier: reuseId) as? MKPinAnnotationView
+//        if pinView == nil {
+//            pinView = MKPinAnnotationView(annotation: annotation, reuseIdentifier: reuseId)
+//            pinView!.canShowCallout = true
+//            pinView!.pinTintColor = .purple
+//            pinView?.image = UIImage(named: "icon-annotation")
+//
+//            //next line sets a button for the right side of the callout...
+//            pinView!.rightCalloutAccessoryView = UIButton(type: .detailDisclosure)
+//        } else {
+//            pinView!.annotation = annotation
+//        }
+//        return pinView
     }
     
     func mapView(_ mapView: MKMapView, annotationView view: MKAnnotationView,
                  calloutAccessoryControlTapped control: UIControl) {
         let selectedLoc = view.annotation
-        print("Annotation '\(selectedLoc?.title!)' has been selected")
+        print("Annotation '\(String(describing: selectedLoc?.title!))' has been selected")
         
         let currentLocMapItem = MKMapItem.forCurrentLocation()
         

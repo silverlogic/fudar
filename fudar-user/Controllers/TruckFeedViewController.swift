@@ -32,6 +32,7 @@ final class TruckFeedViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setup()
+        self.navigationController?.navigationBar.isHidden = true
     }
 }
 

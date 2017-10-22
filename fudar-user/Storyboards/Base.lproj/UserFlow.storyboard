@@ -44,8 +44,8 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="90.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Truck Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7IN-S9-0z1">
-                                                    <rect key="frame" x="86" y="8" width="91.5" height="20"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Truck Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7IN-S9-0z1">
+                                                    <rect key="frame" x="86" y="8" width="212" height="22"/>
                                                     <fontDescription key="fontDescription" name="Dosis-Bold" family="Dosis" pointSize="17"/>
                                                     <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
@@ -118,7 +118,7 @@
                                                     </constraints>
                                                     <state key="normal" image="locationIcon"/>
                                                     <connections>
-                                                        <segue destination="S8T-A5-x0C" kind="show" id="mXA-FK-ixa"/>
+                                                        <segue destination="tvG-he-BKN" kind="show" id="mXA-FK-ixa"/>
                                                     </connections>
                                                 </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="17 Reviews" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="WXb-k7-wKZ">
@@ -172,12 +172,6 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vUn-Qp-dnl">
                                 <rect key="frame" x="0.0" y="64" width="375" height="56"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Map" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8NE-Xo-mb5">
-                                        <rect key="frame" x="332.5" y="18" width="34.5" height="21"/>
-                                        <fontDescription key="fontDescription" name="Dosis-Medium" family="Dosis" pointSize="17"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Filter" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cH4-fg-cL8">
                                         <rect key="frame" x="8" y="17" width="37.5" height="21"/>
                                         <constraints>
@@ -188,23 +182,31 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="MjL-LC-rcj">
-                                        <rect key="frame" x="53" y="0.0" width="273" height="56"/>
+                                        <rect key="frame" x="53" y="0.0" width="284" height="56"/>
                                         <color key="barTintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </searchBar>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Iyy-C5-Kb2">
+                                        <rect key="frame" x="337" y="13" width="30" height="30"/>
+                                        <state key="normal" title="Map">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="tvG-he-BKN" kind="show" id="RDq-Hh-VFt"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="bottom" secondItem="8NE-Xo-mb5" secondAttribute="bottom" constant="17" id="6Q6-DE-V7B"/>
+                                    <constraint firstAttribute="trailing" secondItem="Iyy-C5-Kb2" secondAttribute="trailing" constant="8" id="2TL-8h-ufp"/>
                                     <constraint firstItem="cH4-fg-cL8" firstAttribute="leading" secondItem="vUn-Qp-dnl" secondAttribute="leading" constant="8" id="DBg-Lz-i5v"/>
                                     <constraint firstAttribute="bottom" secondItem="MjL-LC-rcj" secondAttribute="bottom" id="EcA-m1-crH"/>
-                                    <constraint firstItem="8NE-Xo-mb5" firstAttribute="leading" secondItem="MjL-LC-rcj" secondAttribute="trailing" constant="6.5" id="JXN-8T-MKS"/>
-                                    <constraint firstAttribute="trailing" secondItem="8NE-Xo-mb5" secondAttribute="trailing" constant="8" id="K6b-FZ-QLs"/>
                                     <constraint firstItem="cH4-fg-cL8" firstAttribute="top" secondItem="vUn-Qp-dnl" secondAttribute="top" constant="17" id="gSh-zB-yn2"/>
                                     <constraint firstItem="MjL-LC-rcj" firstAttribute="leading" secondItem="cH4-fg-cL8" secondAttribute="trailing" constant="8" id="jrQ-VN-SI7"/>
-                                    <constraint firstItem="8NE-Xo-mb5" firstAttribute="top" secondItem="vUn-Qp-dnl" secondAttribute="top" constant="18" id="ocm-D1-7bf"/>
-                                    <constraint firstItem="8NE-Xo-mb5" firstAttribute="leading" secondItem="MjL-LC-rcj" secondAttribute="trailing" constant="6.5" id="qdl-da-GWe"/>
+                                    <constraint firstAttribute="bottom" secondItem="Iyy-C5-Kb2" secondAttribute="bottom" constant="13" id="lSI-9G-gGW"/>
                                     <constraint firstItem="MjL-LC-rcj" firstAttribute="top" secondItem="vUn-Qp-dnl" secondAttribute="top" id="wju-ys-1gH"/>
+                                    <constraint firstItem="Iyy-C5-Kb2" firstAttribute="top" secondItem="vUn-Qp-dnl" secondAttribute="top" constant="13" id="xlt-en-XIU"/>
+                                    <constraint firstItem="Iyy-C5-Kb2" firstAttribute="leading" secondItem="MjL-LC-rcj" secondAttribute="trailing" id="yWl-Ml-caS"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -228,7 +230,7 @@
             </objects>
             <point key="canvasLocation" x="1525.5999999999999" y="349.47526236881561"/>
         </scene>
-        <!--Map View Controller-->
+        <!--Nearby Businesses-->
         <scene sceneID="9jc-yL-SZy">
             <objects>
                 <viewController id="S8T-A5-x0C" customClass="MapViewController" customModule="fudar_user" customModuleProvider="target" sceneMemberID="viewController">
@@ -252,13 +254,14 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="eir-HJ-6dS"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Nearby Businesses" id="HCP-aY-QAr"/>
                     <connections>
                         <outlet property="mapView" destination="UlK-OZ-rta" id="saI-Oo-dmI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="a2S-bt-yVi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2200.8000000000002" y="348.57571214392806"/>
+            <point key="canvasLocation" x="2857" y="348"/>
         </scene>
         <!--Log in-->
         <scene sceneID="TQF-iw-0Mt">
@@ -494,10 +497,31 @@
             </objects>
             <point key="canvasLocation" x="-215" y="351"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="EuL-Qu-AJl">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="tvG-he-BKN" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="OIo-Kl-h75">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="S8T-A5-x0C" kind="relationship" relationship="rootViewController" id="84Q-sU-Cza"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Y1I-Qy-dOG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2200" y="348.12593703148428"/>
+        </scene>
     </scenes>
     <resources>
         <image name="Layers100X" width="16" height="16"/>
         <image name="locationIcon" width="20" height="29"/>
         <image name="login-facebook" width="16" height="16"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="mXA-FK-ixa"/>
+    </inferredMetricsTieBreakers>
 </document>
