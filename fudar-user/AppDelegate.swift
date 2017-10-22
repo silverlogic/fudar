@@ -9,12 +9,13 @@
 import UIKit
 import CloverConnector_Hackathon_2017
 import Intents
+import Firebase
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate, PairingDeviceConfiguration {
     
     var window: UIWindow?
-    
+
     public var cloverConnector: ICloverConnector?
     public var cloverConnectorListener: CloverConnectorListener?
     fileprivate var token:String?
@@ -23,7 +24,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate, PairingDeviceConfiguratio
     fileprivate let PAIRING_AUTH_TOKEN_KEY:String = "PAIRING_AUTH_TOKEN"
     
     var delegate:OAuthDelegate? = nil
-    
+
+
+    func application(_ application: UIApplication, willFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey : Any]? = nil) -> Bool {
+        FirebaseApp.configure()
+        //FIRDatabase.database().persistenceEnabled = true
+        return true
+    }
+
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         store = POSStore()
         store?.availableItems.append(POSItem(id: "1", name: "Cheeseburger", price: 579, taxRate: 0.075, taxable: true))

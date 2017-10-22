@@ -14,7 +14,10 @@ target 'fudar-user' do
   pod 'IQKeyboardManager'
   pod 'SCLAlertView', :git => "https://github.com/vikmeup/SCLAlertView-Swift.git"
   pod 'SVProgressHUD'
-  pod 'CloverConnector-Hackathon-2017', '~> 0.0.4'  
+  pod 'JVFloatLabeledTextField'
+  pod 'CloverConnector-Hackathon-2017', '~> 0.0.4'
+  #pod 'ObjectMapper', '~> 2.2'
+  pod 'Kingfisher'
 
   target 'fudar-userTests' do
     inherit! :search_paths

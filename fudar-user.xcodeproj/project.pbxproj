@@ -13,7 +13,6 @@
 		220350061F9C3E3700291AFE /* OrderManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 220350051F9C3E3700291AFE /* OrderManager.swift */; };
 		224A76561F9BC556004AEB3A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224A76551F9BC556004AEB3A /* AppDelegate.swift */; };
 		224A76581F9BC556004AEB3A /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224A76571F9BC556004AEB3A /* FirstViewController.swift */; };
-		224A765A1F9BC556004AEB3A /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 224A76591F9BC556004AEB3A /* SecondViewController.swift */; };
 		224A765D1F9BC556004AEB3A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 224A765B1F9BC556004AEB3A /* Main.storyboard */; };
 		224A765F1F9BC556004AEB3A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 224A765E1F9BC556004AEB3A /* Assets.xcassets */; };
 		224A76621F9BC556004AEB3A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 224A76601F9BC556004AEB3A /* LaunchScreen.storyboard */; };
@@ -35,6 +34,25 @@
 		229C48E81F9BFE45006AE32C /* POSExchange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229C48DD1F9BFE45006AE32C /* POSExchange.swift */; };
 		229C48EA1F9BFEB0006AE32C /* CurrencyUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229C48E91F9BFEB0006AE32C /* CurrencyUtils.swift */; };
 		22F0C65B1F9BCF9F00845869 /* PaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F0C65A1F9BCF9F00845869 /* PaymentViewController.swift */; };
+		2633561C1F9BFB29002AD30A /* UserFlow.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2633561A1F9BFB29002AD30A /* UserFlow.storyboard */; };
+		2634A7211F9C2DEF0001E6F0 /* TruckFeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2634A7201F9C2DEF0001E6F0 /* TruckFeedViewController.swift */; };
+		2634A7231F9C30090001E6F0 /* UIStoryboardSegue+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2634A7221F9C30090001E6F0 /* UIStoryboardSegue+Extension.swift */; };
+		2665F1211F9C0D9900758B07 /* AuthenticationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2665F1201F9C0D9900758B07 /* AuthenticationManager.swift */; };
+		2665F1231F9C0E0800758B07 /* FirebaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2665F1221F9C0E0800758B07 /* FirebaseManager.swift */; };
+		2665F1251F9C0E3B00758B07 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2665F1241F9C0E3B00758B07 /* LocationManager.swift */; };
+		2665F1281F9C0FA500758B07 /* UIVIewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2665F1271F9C0FA500758B07 /* UIVIewController+Extension.swift */; };
+		2665F12A1F9C10D200758B07 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2665F1291F9C10D200758B07 /* UIColor+Extension.swift */; };
+		2665F12E1F9C193C00758B07 /* UIFont+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2665F12D1F9C193C00758B07 /* UIFont+Extension.swift */; };
+		2665F1301F9C19A000758B07 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2665F12F1F9C19A000758B07 /* Constants.swift */; };
+		2665F1321F9C1A4A00758B07 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2665F1311F9C1A4A00758B07 /* UIView+Extension.swift */; };
+		2665F1351F9C1F8400758B07 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2665F1341F9C1F8400758B07 /* GoogleService-Info.plist */; };
+		2665F1371F9C215300758B07 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2665F1361F9C215300758B07 /* SecondViewController.swift */; };
+		2665F1391F9C268D00758B07 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2665F1381F9C268D00758B07 /* LoginViewController.swift */; };
+		267209A01F9C3D1A00B1ED26 /* BaseImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2672099F1F9C3D1A00B1ED26 /* BaseImageView.swift */; };
+		267209A21F9C486F00B1ED26 /* Truck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 267209A11F9C486F00B1ED26 /* Truck.swift */; };
+		267209A41F9C4CEF00B1ED26 /* CloverManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 267209A31F9C4CEF00B1ED26 /* CloverManager.swift */; };
+		267209A61F9C5ABB00B1ED26 /* ImageAccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 267209A51F9C5ABB00B1ED26 /* ImageAccess.swift */; };
+		268FCE781F9C3853001CA3E0 /* TruckTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268FCE771F9C3853001CA3E0 /* TruckTableViewCell.swift */; };
 		296445EC81618EF16AFD389D /* Pods_fudar_userUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 782C480331F0E117154EE894 /* Pods_fudar_userUITests.framework */; };
 		C7F8B8AABD48435B780296BE /* Pods_fudar_user.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D4C3B2A95E6E6FBC8066FF6 /* Pods_fudar_user.framework */; };
 /* End PBXBuildFile section */
@@ -62,8 +80,7 @@
 		220350051F9C3E3700291AFE /* OrderManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderManager.swift; sourceTree = "<group>"; };
 		224A76521F9BC556004AEB3A /* fudar-user.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "fudar-user.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		224A76551F9BC556004AEB3A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		224A76571F9BC556004AEB3A /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		224A76591F9BC556004AEB3A /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		224A76571F9BC556004AEB3A /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FirstViewController.swift; path = Controllers/FirstViewController.swift; sourceTree = "<group>"; };
 		224A765C1F9BC556004AEB3A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		224A765E1F9BC556004AEB3A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		224A76611F9BC556004AEB3A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -90,6 +107,26 @@
 		229C48DD1F9BFE45006AE32C /* POSExchange.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = POSExchange.swift; sourceTree = "<group>"; };
 		229C48E91F9BFEB0006AE32C /* CurrencyUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyUtils.swift; sourceTree = "<group>"; };
 		22F0C65A1F9BCF9F00845869 /* PaymentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentViewController.swift; sourceTree = "<group>"; };
+		2633561B1F9BFB29002AD30A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/UserFlow.storyboard; sourceTree = "<group>"; };
+		2634A7201F9C2DEF0001E6F0 /* TruckFeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TruckFeedViewController.swift; path = "fudar-user/Controllers/TruckFeedViewController.swift"; sourceTree = SOURCE_ROOT; };
+		2634A7221F9C30090001E6F0 /* UIStoryboardSegue+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStoryboardSegue+Extension.swift"; sourceTree = "<group>"; };
+		2665F1201F9C0D9900758B07 /* AuthenticationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationManager.swift; sourceTree = "<group>"; };
+		2665F1221F9C0E0800758B07 /* FirebaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseManager.swift; sourceTree = "<group>"; };
+		2665F1241F9C0E3B00758B07 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		2665F1271F9C0FA500758B07 /* UIVIewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIVIewController+Extension.swift"; sourceTree = "<group>"; };
+		2665F1291F9C10D200758B07 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		2665F12D1F9C193C00758B07 /* UIFont+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Extension.swift"; sourceTree = "<group>"; };
+		2665F12F1F9C19A000758B07 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		2665F1311F9C1A4A00758B07 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		2665F1341F9C1F8400758B07 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		2665F1361F9C215300758B07 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SecondViewController.swift; path = Controllers/SecondViewController.swift; sourceTree = "<group>"; };
+		2665F1381F9C268D00758B07 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		2672099F1F9C3D1A00B1ED26 /* BaseImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseImageView.swift; sourceTree = "<group>"; };
+		267209A11F9C486F00B1ED26 /* Truck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Truck.swift; sourceTree = "<group>"; };
+		267209A31F9C4CEF00B1ED26 /* CloverManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloverManager.swift; sourceTree = "<group>"; };
+		267209A51F9C5ABB00B1ED26 /* ImageAccess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageAccess.swift; sourceTree = "<group>"; };
+		268FCE751F9C33D5001CA3E0 /* dosis */ = {isa = PBXFileReference; lastKnownFileType = folder; path = dosis; sourceTree = "<group>"; };
+		268FCE771F9C3853001CA3E0 /* TruckTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TruckTableViewCell.swift; sourceTree = "<group>"; };
 		373080FC4C5CCDE44A7C7675 /* Pods-fudar-userTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fudar-userTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-fudar-userTests/Pods-fudar-userTests.debug.xcconfig"; sourceTree = "<group>"; };
 		3BA36A52CF643EFBA41CEF39 /* Pods_fudar_userTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_fudar_userTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D4C3B2A95E6E6FBC8066FF6 /* Pods_fudar_user.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_fudar_user.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -167,16 +204,20 @@
 			isa = PBXGroup;
 			children = (
 				229C48B01F9BFC8C006AE32C /* Clover */,
+				268FCE761F9C382A001CA3E0 /* Subviews */,
+				2665F1341F9C1F8400758B07 /* GoogleService-Info.plist */,
 				22F0C65C1F9BCFB200845869 /* Storyboards */,
-				22F0C6591F9BCF5A00845869 /* Views */,
+				2665F1261F9C0F8800758B07 /* BaseClasses */,
+				2665F11F1F9C0D8800758B07 /* Managers */,
 				22F0C6581F9BCF5200845869 /* Controllers */,
 				22F0C6571F9BCF4700845869 /* Models */,
 				224A76551F9BC556004AEB3A /* AppDelegate.swift */,
+				2665F1361F9C215300758B07 /* SecondViewController.swift */,
 				224A76571F9BC556004AEB3A /* FirstViewController.swift */,
-				224A76591F9BC556004AEB3A /* SecondViewController.swift */,
 				224A765E1F9BC556004AEB3A /* Assets.xcassets */,
 				224A76601F9BC556004AEB3A /* LaunchScreen.storyboard */,
 				224A76631F9BC556004AEB3A /* Info.plist */,
+				268FCE751F9C33D5001CA3E0 /* dosis */,
 			);
 			path = "fudar-user";
 			sourceTree = "<group>";
@@ -225,6 +266,8 @@
 				229C48D61F9BFE45006AE32C /* POSPayment.swift */,
 				229C48D51F9BFE44006AE32C /* POSRefund.swift */,
 				229C48D71F9BFE45006AE32C /* POSStore.swift */,
+				22457C0C1F9BE79E00965F3B /* CloverGoConnectorListener.swift */,
+				267209A11F9C486F00B1ED26 /* Truck.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -233,23 +276,53 @@
 			isa = PBXGroup;
 			children = (
 				22F0C65A1F9BCF9F00845869 /* PaymentViewController.swift */,
+				2665F1381F9C268D00758B07 /* LoginViewController.swift */,
+				2634A7201F9C2DEF0001E6F0 /* TruckFeedViewController.swift */,
 			);
 			path = Controllers;
-			sourceTree = "<group>";
-		};
-		22F0C6591F9BCF5A00845869 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Views;
 			sourceTree = "<group>";
 		};
 		22F0C65C1F9BCFB200845869 /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
 				224A765B1F9BC556004AEB3A /* Main.storyboard */,
+				2633561A1F9BFB29002AD30A /* UserFlow.storyboard */,
 			);
 			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		2665F11F1F9C0D8800758B07 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				2665F1201F9C0D9900758B07 /* AuthenticationManager.swift */,
+				2665F1221F9C0E0800758B07 /* FirebaseManager.swift */,
+				2665F1241F9C0E3B00758B07 /* LocationManager.swift */,
+				267209A31F9C4CEF00B1ED26 /* CloverManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		2665F1261F9C0F8800758B07 /* BaseClasses */ = {
+			isa = PBXGroup;
+			children = (
+				2665F1271F9C0FA500758B07 /* UIVIewController+Extension.swift */,
+				2665F12D1F9C193C00758B07 /* UIFont+Extension.swift */,
+				2665F1291F9C10D200758B07 /* UIColor+Extension.swift */,
+				2665F12F1F9C19A000758B07 /* Constants.swift */,
+				2665F1311F9C1A4A00758B07 /* UIView+Extension.swift */,
+				2634A7221F9C30090001E6F0 /* UIStoryboardSegue+Extension.swift */,
+				2672099F1F9C3D1A00B1ED26 /* BaseImageView.swift */,
+				267209A51F9C5ABB00B1ED26 /* ImageAccess.swift */,
+			);
+			path = BaseClasses;
+			sourceTree = "<group>";
+		};
+		268FCE761F9C382A001CA3E0 /* Subviews */ = {
+			isa = PBXGroup;
+			children = (
+				268FCE771F9C3853001CA3E0 /* TruckTableViewCell.swift */,
+			);
+			path = Subviews;
 			sourceTree = "<group>";
 		};
 		6D12BC0585E75E9B8D39A2D6 /* Frameworks */ = {
@@ -391,7 +464,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2665F1351F9C1F8400758B07 /* GoogleService-Info.plist in Resources */,
 				224A76621F9BC556004AEB3A /* LaunchScreen.storyboard in Resources */,
+				2633561C1F9BFB29002AD30A /* UserFlow.storyboard in Resources */,
 				224A765F1F9BC556004AEB3A /* Assets.xcassets in Resources */,
 				224A765D1F9BC556004AEB3A /* Main.storyboard in Resources */,
 			);
@@ -558,7 +633,9 @@
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/IQKeyboardManager/IQKeyboardManager.framework",
+				"${BUILT_PRODUCTS_DIR}/JVFloatLabeledTextField/JVFloatLabeledTextField.framework",
 				"${BUILT_PRODUCTS_DIR}/KYNavigationProgress/KYNavigationProgress.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
 				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
 				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
@@ -579,7 +656,9 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManager.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JVFloatLabeledTextField.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KYNavigationProgress.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
@@ -613,6 +692,8 @@
 				220350021F9C1BA300291AFE /* ReaderManager.swift in Sources */,
 				229C48E31F9BFE45006AE32C /* POSNakedRefund.swift in Sources */,
 				229C48E71F9BFE45006AE32C /* POSDiscount.swift in Sources */,
+				2665F1391F9C268D00758B07 /* LoginViewController.swift in Sources */,
+				267209A21F9C486F00B1ED26 /* Truck.swift in Sources */,
 				224A76561F9BC556004AEB3A /* AppDelegate.swift in Sources */,
 				229C48E11F9BFE45006AE32C /* POSPayment.swift in Sources */,
 				229C48BA1F9BFC93006AE32C /* CloverGoConnectorListener.swift in Sources */,
@@ -624,6 +705,22 @@
 				229C48EA1F9BFEB0006AE32C /* CurrencyUtils.swift in Sources */,
 				22F0C65B1F9BCF9F00845869 /* PaymentViewController.swift in Sources */,
 				229C48E81F9BFE45006AE32C /* POSExchange.swift in Sources */,
+				2665F1231F9C0E0800758B07 /* FirebaseManager.swift in Sources */,
+				2665F1371F9C215300758B07 /* SecondViewController.swift in Sources */,
+				2665F1251F9C0E3B00758B07 /* LocationManager.swift in Sources */,
+				267209A01F9C3D1A00B1ED26 /* BaseImageView.swift in Sources */,
+				2665F12E1F9C193C00758B07 /* UIFont+Extension.swift in Sources */,
+				268FCE781F9C3853001CA3E0 /* TruckTableViewCell.swift in Sources */,
+				2665F1301F9C19A000758B07 /* Constants.swift in Sources */,
+				2665F1321F9C1A4A00758B07 /* UIView+Extension.swift in Sources */,
+				2634A7211F9C2DEF0001E6F0 /* TruckFeedViewController.swift in Sources */,
+				2665F1281F9C0FA500758B07 /* UIVIewController+Extension.swift in Sources */,
+				2634A7231F9C30090001E6F0 /* UIStoryboardSegue+Extension.swift in Sources */,
+				267209A41F9C4CEF00B1ED26 /* CloverManager.swift in Sources */,
+				2665F1211F9C0D9900758B07 /* AuthenticationManager.swift in Sources */,
+				22F0C65B1F9BCF9F00845869 /* PaymentViewController.swift in Sources */,
+				2665F12A1F9C10D200758B07 /* UIColor+Extension.swift in Sources */,
+				267209A61F9C5ABB00B1ED26 /* ImageAccess.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -673,6 +770,14 @@
 				224A76611F9BC556004AEB3A /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		2633561A1F9BFB29002AD30A /* UserFlow.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2633561B1F9BFB29002AD30A /* Base */,
+			);
+			name = UserFlow.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
