@@ -8,11 +8,14 @@
 
 import UIKit
 import CloverConnector_Hackathon_2017
+import CoreLocation
+import FirebaseDatabase
 
 final class PaymentViewController: UIViewController, StartTransactionDelegate {
     
     // MARK: - Attributes
     var cloverConnector450Reader: ICloverConnector?
+    let locationManager = CLLocationManager()
 
     // MARK: - IBOutlets
     @IBOutlet weak var deviceConnectedLabel: UILabel!
@@ -42,9 +45,21 @@ final class PaymentViewController: UIViewController, StartTransactionDelegate {
         authSale()
     }
     
-    // MARK; - Lifecycle
+    // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        loginUser()
+        // Ask for Authorisation from the User.
+        self.locationManager.requestAlwaysAuthorization()
+        
+        // For use in foreground
+        self.locationManager.requestWhenInUseAuthorization()
+        
+        if CLLocationManager.locationServicesEnabled() {
+            locationManager.delegate = self
+            locationManager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters
+            locationManager.startUpdatingLocation()
+        }
         checkReaderConnectedStatus()
         (UIApplication.shared.delegate as? AppDelegate)?.cloverConnectorListener?.viewController = self
     }
@@ -105,5 +120,25 @@ extension PaymentViewController {
     func readerDisconnected() {
         FLAGS.is450ReaderInitialized = false
         checkReaderConnectedStatus()
+    }
+    
+    func loginUser() {
+        AuthenticationManager.shared.login(email: "md@tsl.io", password: "123456", success: { [weak self] (user) in
+            }, failure: { [weak self] (error: Error) in
+                guard let strongSelf = self else { return }
+                strongSelf.showInfoAlert(title:NSLocalizedString("Alert.Error", comment: "error"), subTitle: error.localizedDescription)
+        })
+    }
+}
+
+
+// MARK: - CLLocationManagerDelegate
+extension PaymentViewController: CLLocationManagerDelegate {
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        let locValue:CLLocationCoordinate2D = manager.location!.coordinate
+        print("locations = \(locValue.latitude) \(locValue.longitude)")
+        let ref = Database.database().reference().child("truck")
+        ref.updateChildValues(["lat": locValue.latitude])
+        ref.updateChildValues(["lon": locValue.longitude])
     }
 }

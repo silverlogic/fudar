@@ -33,6 +33,9 @@
 		229C48E71F9BFE45006AE32C /* POSDiscount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229C48DC1F9BFE45006AE32C /* POSDiscount.swift */; };
 		229C48E81F9BFE45006AE32C /* POSExchange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229C48DD1F9BFE45006AE32C /* POSExchange.swift */; };
 		229C48EA1F9BFEB0006AE32C /* CurrencyUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 229C48E91F9BFEB0006AE32C /* CurrencyUtils.swift */; };
+		22CEBE141F9C6F56008C7976 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CEBE131F9C6F56008C7976 /* MapViewController.swift */; };
+		22CEBE161F9C6F82008C7976 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22CEBE151F9C6F82008C7976 /* MapKit.framework */; };
+		22CEBE171F9C797B008C7976 /* dosis in Resources */ = {isa = PBXBuildFile; fileRef = 268FCE751F9C33D5001CA3E0 /* dosis */; };
 		22F0C65B1F9BCF9F00845869 /* PaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F0C65A1F9BCF9F00845869 /* PaymentViewController.swift */; };
 		2633561C1F9BFB29002AD30A /* UserFlow.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2633561A1F9BFB29002AD30A /* UserFlow.storyboard */; };
 		2634A7211F9C2DEF0001E6F0 /* TruckFeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2634A7201F9C2DEF0001E6F0 /* TruckFeedViewController.swift */; };
@@ -106,6 +109,8 @@
 		229C48DC1F9BFE45006AE32C /* POSDiscount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = POSDiscount.swift; sourceTree = "<group>"; };
 		229C48DD1F9BFE45006AE32C /* POSExchange.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = POSExchange.swift; sourceTree = "<group>"; };
 		229C48E91F9BFEB0006AE32C /* CurrencyUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyUtils.swift; sourceTree = "<group>"; };
+		22CEBE131F9C6F56008C7976 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		22CEBE151F9C6F82008C7976 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		22F0C65A1F9BCF9F00845869 /* PaymentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentViewController.swift; sourceTree = "<group>"; };
 		2633561B1F9BFB29002AD30A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/UserFlow.storyboard; sourceTree = "<group>"; };
 		2634A7201F9C2DEF0001E6F0 /* TruckFeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TruckFeedViewController.swift; path = "fudar-user/Controllers/TruckFeedViewController.swift"; sourceTree = SOURCE_ROOT; };
@@ -144,6 +149,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22CEBE161F9C6F82008C7976 /* MapKit.framework in Frameworks */,
 				C7F8B8AABD48435B780296BE /* Pods_fudar_user.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -266,7 +272,6 @@
 				229C48D61F9BFE45006AE32C /* POSPayment.swift */,
 				229C48D51F9BFE44006AE32C /* POSRefund.swift */,
 				229C48D71F9BFE45006AE32C /* POSStore.swift */,
-				22457C0C1F9BE79E00965F3B /* CloverGoConnectorListener.swift */,
 				267209A11F9C486F00B1ED26 /* Truck.swift */,
 			);
 			path = Models;
@@ -278,6 +283,7 @@
 				22F0C65A1F9BCF9F00845869 /* PaymentViewController.swift */,
 				2665F1381F9C268D00758B07 /* LoginViewController.swift */,
 				2634A7201F9C2DEF0001E6F0 /* TruckFeedViewController.swift */,
+				22CEBE131F9C6F56008C7976 /* MapViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -328,6 +334,7 @@
 		6D12BC0585E75E9B8D39A2D6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				22CEBE151F9C6F82008C7976 /* MapKit.framework */,
 				4D4C3B2A95E6E6FBC8066FF6 /* Pods_fudar_user.framework */,
 				3BA36A52CF643EFBA41CEF39 /* Pods_fudar_userTests.framework */,
 				782C480331F0E117154EE894 /* Pods_fudar_userUITests.framework */,
@@ -426,6 +433,11 @@
 					224A76511F9BC556004AEB3A = {
 						CreatedOnToolsVersion = 9.0.1;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					224A76671F9BC556004AEB3A = {
 						CreatedOnToolsVersion = 9.0.1;
@@ -464,6 +476,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22CEBE171F9C797B008C7976 /* dosis in Resources */,
 				2665F1351F9C1F8400758B07 /* GoogleService-Info.plist in Resources */,
 				224A76621F9BC556004AEB3A /* LaunchScreen.storyboard in Resources */,
 				2633561C1F9BFB29002AD30A /* UserFlow.storyboard in Resources */,
@@ -686,7 +699,6 @@
 				229C48E21F9BFE45006AE32C /* POSStore.swift in Sources */,
 				229C48BC1F9BFC93006AE32C /* Utility.swift in Sources */,
 				229C48DE1F9BFE45006AE32C /* POSItem.swift in Sources */,
-				224A765A1F9BC556004AEB3A /* SecondViewController.swift in Sources */,
 				229C48E61F9BFE45006AE32C /* POSLineItem.swift in Sources */,
 				229C48DF1F9BFE45006AE32C /* POSOrderItem.swift in Sources */,
 				220350021F9C1BA300291AFE /* ReaderManager.swift in Sources */,
@@ -705,6 +717,7 @@
 				229C48EA1F9BFEB0006AE32C /* CurrencyUtils.swift in Sources */,
 				22F0C65B1F9BCF9F00845869 /* PaymentViewController.swift in Sources */,
 				229C48E81F9BFE45006AE32C /* POSExchange.swift in Sources */,
+				22CEBE141F9C6F56008C7976 /* MapViewController.swift in Sources */,
 				2665F1231F9C0E0800758B07 /* FirebaseManager.swift in Sources */,
 				2665F1371F9C215300758B07 /* SecondViewController.swift in Sources */,
 				2665F1251F9C0E3B00758B07 /* LocationManager.swift in Sources */,
@@ -718,7 +731,6 @@
 				2634A7231F9C30090001E6F0 /* UIStoryboardSegue+Extension.swift in Sources */,
 				267209A41F9C4CEF00B1ED26 /* CloverManager.swift in Sources */,
 				2665F1211F9C0D9900758B07 /* AuthenticationManager.swift in Sources */,
-				22F0C65B1F9BCF9F00845869 /* PaymentViewController.swift in Sources */,
 				2665F12A1F9C10D200758B07 /* UIColor+Extension.swift in Sources */,
 				267209A61F9C5ABB00B1ED26 /* ImageAccess.swift in Sources */,
 			);
@@ -899,10 +911,10 @@
 				DEVELOPMENT_TEAM = 4SB3F2S2K3;
 				INFOPLIST_FILE = "fudar-user/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.silverlogic.fudar-user";
+				PRODUCT_BUNDLE_IDENTIFIER = com.silverlogic.fudar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -915,10 +927,10 @@
 				DEVELOPMENT_TEAM = 4SB3F2S2K3;
 				INFOPLIST_FILE = "fudar-user/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.silverlogic.fudar-user";
+				PRODUCT_BUNDLE_IDENTIFIER = com.silverlogic.fudar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
