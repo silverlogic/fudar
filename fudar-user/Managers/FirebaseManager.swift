@@ -9,6 +9,7 @@
 import Foundation
 import Firebase
 
+
 final class FirebaseManager {
 
     // MARK: - Shared Instance
@@ -64,7 +65,38 @@ extension FirebaseManager {
 
 
 // MARK: - Post/Write Methods
-fileprivate extension FirebaseManager {
+extension FirebaseManager {
+    func addOrder(userId: String, item: String, price: Double, success: @escaping (_ success: Bool) -> Void, failure: @escaping (_ error: Error) -> Void) {
+        let postRef = self.ref.child("users/\(userId)/orders")
+        let menuItem: [NSString : Any] = ["item" : item, "price" : price]
+        let order: [NSString : Any] = ["item" : menuItem]
+        let newPieceRef = postRef.childByAutoId()
+        newPieceRef.updateChildValues(order) { (error: Error?, reference: DatabaseReference) in
+            if (error != nil) {
+                failure(error!)
+                return
+            }  else {
+                success(true)
+            }
+        }
+    }
+
+    func addOrdersItem(userId: String, item: String, price: Double, success: @escaping (_ success: Bool) -> Void, failure: @escaping (_ error: Error) -> Void) {
+        let postRef = self.ref.child("users/\(userId)/orders/item")
+        let item: [NSString : Any] = ["item" : item, "price" : price]
+        let newPieceRef = postRef.childByAutoId()
+        newPieceRef.updateChildValues(item) { (error: Error?, reference: DatabaseReference) in
+            if (error != nil) {
+                failure(error!)
+                return
+            }  else {
+                success(true)
+            }
+        }
+    }
+
+
+
     func createNewTruck(truckId: String, truckInfo: NSDictionary, success: @escaping (_ success: Bool) -> Void, failure: @escaping (_ error: Error) -> Void) {
         let postRef = self.ref.child("trucks/\(truckId)/")
         postRef.setValue(truckInfo) { error, reference in
