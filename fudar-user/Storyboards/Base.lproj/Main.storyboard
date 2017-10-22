@@ -41,6 +41,9 @@
                                 <state key="normal" title="Purchase Things">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="purchaseButtonTapped:" destination="9pv-A4-QxB" eventType="touchUpInside" id="d4G-W8-hwl"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Not Connected" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NLN-sv-j0e">
                                 <rect key="frame" x="16" y="99" width="343" height="21"/>
@@ -52,21 +55,39 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0kJ-Un-LMS">
+                                <rect key="frame" x="16" y="463" width="343" height="30"/>
+                                <color key="backgroundColor" red="0.12941176469999999" green="0.87058823529999996" blue="0.6705882353" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Nem-mO-60b"/>
+                                    <constraint firstAttribute="width" constant="343" id="jkf-4M-0td"/>
+                                </constraints>
+                                <state key="normal" title="Keyed Purchase">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="keyedPurchaseButtonTapped:" destination="9pv-A4-QxB" eventType="touchUpInside" id="Lhk-EZ-fIv"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="PQr-Ze-W5v" firstAttribute="trailing" secondItem="yoP-uQ-W54" secondAttribute="trailing" constant="16" id="Nhf-Bc-9R4"/>
+                            <constraint firstItem="PQr-Ze-W5v" firstAttribute="bottom" secondItem="0kJ-Un-LMS" secondAttribute="bottom" constant="125" id="RQ4-mO-iQM"/>
                             <constraint firstItem="xUi-QA-sIK" firstAttribute="top" secondItem="NLN-sv-j0e" secondAttribute="bottom" constant="8" id="VYe-9T-UzJ"/>
                             <constraint firstItem="NLN-sv-j0e" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" constant="16" id="gKE-Dm-cDT"/>
                             <constraint firstItem="PQr-Ze-W5v" firstAttribute="bottom" secondItem="yoP-uQ-W54" secondAttribute="bottom" constant="270" id="m2u-iK-j4T"/>
                             <constraint firstItem="xUi-QA-sIK" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" constant="16" id="qgA-st-A2D"/>
                             <constraint firstItem="xUi-QA-sIK" firstAttribute="top" secondItem="PQr-Ze-W5v" secondAttribute="top" constant="108" id="wlY-2m-seH"/>
+                            <constraint firstItem="PQr-Ze-W5v" firstAttribute="trailing" secondItem="0kJ-Un-LMS" secondAttribute="trailing" constant="16" id="yhG-tj-zfb"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="First" image="first" id="acW-dT-cKf"/>
                     <connections>
+                        <outlet property="connectDeviceButton" destination="xUi-QA-sIK" id="d78-Kk-4t2"/>
                         <outlet property="deviceConnectedLabel" destination="NLN-sv-j0e" id="93Y-JK-LxE"/>
+                        <outlet property="purchaseButton" destination="yoP-uQ-W54" id="3sg-D8-2uf"/>
                         <outlet property="purchaseSaleButtonTapped" destination="yoP-uQ-W54" id="EWo-OD-a18"/>
                     </connections>
                 </viewController>
