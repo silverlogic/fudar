@@ -61,6 +61,7 @@
 		4D4C3B2A95E6E6FBC8066FF6 /* Pods_fudar_user.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_fudar_user.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		55F4A4319CDCF69E3B698F30 /* Pods-fudar-userUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fudar-userUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-fudar-userUITests/Pods-fudar-userUITests.release.xcconfig"; sourceTree = "<group>"; };
 		5676620A6A6E56C10751498B /* Pods-fudar-user.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fudar-user.debug.xcconfig"; path = "Pods/Target Support Files/Pods-fudar-user/Pods-fudar-user.debug.xcconfig"; sourceTree = "<group>"; };
+		6FF8086E1F9C3E280082F6A8 /* cloverTutorials.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = cloverTutorials.md; sourceTree = "<group>"; };
 		782C480331F0E117154EE894 /* Pods_fudar_userUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_fudar_userUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A58405B6BE82C672B17DFE33 /* Pods-fudar-userTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fudar-userTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-fudar-userTests/Pods-fudar-userTests.release.xcconfig"; sourceTree = "<group>"; };
 		C4B58B137F3C62A75BB497C7 /* Pods-fudar-userUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fudar-userUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-fudar-userUITests/Pods-fudar-userUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -98,6 +99,7 @@
 		224A76491F9BC556004AEB3A = {
 			isa = PBXGroup;
 			children = (
+				6FF8086E1F9C3E280082F6A8 /* cloverTutorials.md */,
 				224A76541F9BC556004AEB3A /* fudar-user */,
 				224A766B1F9BC556004AEB3A /* fudar-userTests */,
 				224A76761F9BC556004AEB3A /* fudar-userUITests */,
