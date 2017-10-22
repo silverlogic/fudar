@@ -4,11 +4,16 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="Unknown constraint types" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Dosis-Bold.otf">
+            <string>Dosis-Bold</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--First-->
         <scene sceneID="hNz-n2-bh7">
@@ -19,70 +24,63 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xUi-QA-sIK">
-                                <rect key="frame" x="16" y="128" width="343" height="30"/>
-                                <color key="backgroundColor" red="0.062745098040000002" green="0.52549019610000003" blue="0.78039215689999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <rect key="frame" x="125" y="115.5" width="125" height="125"/>
+                                <color key="backgroundColor" red="1" green="0.16078431372549018" blue="0.396078431372549" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="NIq-td-cUc"/>
-                                    <constraint firstAttribute="width" constant="343" id="auV-d5-Gfl"/>
+                                    <constraint firstAttribute="height" constant="125" id="NIq-td-cUc"/>
+                                    <constraint firstAttribute="width" constant="125" id="YFx-ab-wse"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" name="Dosis-Bold" family="Dosis" pointSize="17"/>
                                 <state key="normal" title="Connect Device">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
                                 <connections>
                                     <action selector="connectDeviceButtonTapped:" destination="9pv-A4-QxB" eventType="touchUpInside" id="xKA-gZ-BLg"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yoP-uQ-W54">
-                                <rect key="frame" x="16" y="318" width="343" height="30"/>
-                                <color key="backgroundColor" red="0.12941176469999999" green="0.87058823529999996" blue="0.6705882353" alpha="1" colorSpace="calibratedRGB"/>
+                                <rect key="frame" x="62.5" y="308.5" width="250" height="250"/>
+                                <color key="backgroundColor" red="1" green="0.16078431372549018" blue="0.396078431372549" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="343" id="gqN-ka-MTg"/>
-                                    <constraint firstAttribute="height" constant="30" id="wBL-oa-Zzj"/>
+                                    <constraint firstAttribute="width" constant="250" id="TB5-kH-UpG"/>
+                                    <constraint firstAttribute="height" constant="250" id="wBL-oa-Zzj"/>
                                 </constraints>
-                                <state key="normal" title="Purchase Things">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="Dosis-Bold" family="Dosis" pointSize="23"/>
+                                <state key="normal" title="Complete Transaction">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
                                 <connections>
                                     <action selector="purchaseButtonTapped:" destination="9pv-A4-QxB" eventType="touchUpInside" id="d4G-W8-hwl"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Not Connected" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NLN-sv-j0e">
-                                <rect key="frame" x="16" y="99" width="343" height="21"/>
+                                <rect key="frame" x="16" y="70" width="343" height="25.5"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="21" id="LbV-zs-Tla"/>
                                     <constraint firstAttribute="width" constant="343" id="vcs-tU-jsi"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="Dosis-Bold" family="Dosis" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0kJ-Un-LMS">
-                                <rect key="frame" x="16" y="463" width="343" height="30"/>
-                                <color key="backgroundColor" red="0.12941176469999999" green="0.87058823529999996" blue="0.6705882353" alpha="1" colorSpace="calibratedRGB"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BlackFoodTruck" translatesAutoresizingMaskIntoConstraints="NO" id="0fe-tU-xuI">
+                                <rect key="frame" x="125" y="216" width="125" height="75"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="Nem-mO-60b"/>
-                                    <constraint firstAttribute="width" constant="343" id="jkf-4M-0td"/>
+                                    <constraint firstAttribute="width" constant="125" id="FNo-dv-U2g"/>
+                                    <constraint firstAttribute="height" constant="75" id="Hrh-rU-vO4"/>
                                 </constraints>
-                                <state key="normal" title="Keyed Purchase">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="keyedPurchaseButtonTapped:" destination="9pv-A4-QxB" eventType="touchUpInside" id="Lhk-EZ-fIv"/>
-                                </connections>
-                            </button>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstAttribute="top" secondItem="xUi-QA-sIK" secondAttribute="bottom" constant="51" id="MuK-mF-sFk"/>
-                            <constraint firstItem="PQr-Ze-W5v" firstAttribute="trailing" secondItem="yoP-uQ-W54" secondAttribute="trailing" constant="16" id="Nhf-Bc-9R4"/>
-                            <constraint firstItem="PQr-Ze-W5v" firstAttribute="bottom" secondItem="0kJ-Un-LMS" secondAttribute="bottom" constant="125" id="RQ4-mO-iQM"/>
-                            <constraint firstItem="xUi-QA-sIK" firstAttribute="top" secondItem="NLN-sv-j0e" secondAttribute="bottom" constant="8" id="VYe-9T-UzJ"/>
+                            <constraint firstItem="yoP-uQ-W54" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="2Vu-td-id9"/>
+                            <constraint firstItem="NLN-sv-j0e" firstAttribute="top" secondItem="PQr-Ze-W5v" secondAttribute="top" constant="50" id="FRe-WE-NzQ"/>
+                            <constraint firstItem="xUi-QA-sIK" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="KV1-yN-SaX"/>
+                            <constraint firstItem="xUi-QA-sIK" firstAttribute="top" secondItem="NLN-sv-j0e" secondAttribute="bottom" constant="20" id="VYe-9T-UzJ"/>
+                            <constraint firstItem="0fe-tU-xuI" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="dxx-kd-Qb5"/>
                             <constraint firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="eWP-VD-HP9"/>
+                            <constraint firstItem="yoP-uQ-W54" firstAttribute="centerY" secondItem="tsR-hK-woN" secondAttribute="centerY" constant="100" id="f7z-w6-jRM"/>
                             <constraint firstItem="NLN-sv-j0e" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" constant="16" id="gKE-Dm-cDT"/>
-                            <constraint firstItem="PQr-Ze-W5v" firstAttribute="bottom" secondItem="yoP-uQ-W54" secondAttribute="bottom" constant="270" id="m2u-iK-j4T"/>
-                            <constraint firstItem="xUi-QA-sIK" firstAttribute="leading" secondItem="PQr-Ze-W5v" secondAttribute="leading" constant="16" id="qgA-st-A2D"/>
-                            <constraint firstItem="xUi-QA-sIK" firstAttribute="top" secondItem="PQr-Ze-W5v" secondAttribute="top" constant="108" id="wlY-2m-seH"/>
-                            <constraint firstItem="PQr-Ze-W5v" firstAttribute="trailing" secondItem="0kJ-Un-LMS" secondAttribute="trailing" constant="16" id="yhG-tj-zfb"/>
+                            <constraint firstItem="0fe-tU-xuI" firstAttribute="centerY" secondItem="tsR-hK-woN" secondAttribute="centerY" constant="-80" id="k9U-tA-S1R"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
                     </view>
@@ -163,6 +161,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="BlackFoodTruck" width="185" height="96"/>
         <image name="first" width="30" height="30"/>
         <image name="second" width="30" height="30"/>
     </resources>

@@ -49,6 +49,11 @@ final class PaymentViewController: UIViewController, StartTransactionDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         loginUser()
+        connectDeviceButton.layer.masksToBounds = true
+        connectDeviceButton.layer.cornerRadius = 62.5
+        purchaseButton.layer.masksToBounds = true
+        purchaseButton.layer.cornerRadius = 125.0
+
         // Ask for Authorisation from the User.
         self.locationManager.requestAlwaysAuthorization()
         

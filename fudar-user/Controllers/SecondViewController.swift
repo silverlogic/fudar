@@ -13,12 +13,12 @@ class SecondViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        FirebaseManager.shared.addOrder(item: "Pizza", price: 8.99, success: { [weak self] (success) in
-            print("success")
-            self?.fetchOrderId()
-        }) { (error) in
-            print(error)
-        }
+//        FirebaseManager.shared.addOrder(item: "Pizza", price: 8.99, success: { [weak self] (success) in
+//            print("success")
+//            self?.fetchOrderId()
+//        }) { (error) in
+//            print(error)
+//        }
 
 //        OrderManager.shared.getItems()
 //        OrderManager.shared.createEmptyOrder()
