@@ -66,6 +66,12 @@ extension TruckFeedViewController: UITableViewDataSource {
 
 // MARK: - TableView Delegate
 extension TruckFeedViewController: UITableViewDelegate {
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if indexPath.row == 0 {
+            performSegue(withIdentifier: "goToMenuSegue", sender: self)
+        }
+    }
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
         guard let cell = cell as? TruckTableVielCell else { return }
         let truckForCell = trucks[indexPath.row]

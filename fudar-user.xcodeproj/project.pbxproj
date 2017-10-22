@@ -37,6 +37,9 @@
 		22CEBE161F9C6F82008C7976 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22CEBE151F9C6F82008C7976 /* MapKit.framework */; };
 		22CEBE351F9C9220008C7976 /* dosis in Resources */ = {isa = PBXBuildFile; fileRef = 22CEBE341F9C9220008C7976 /* dosis */; };
 		22CEBE381F9C924A008C7976 /* Dosis-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 22CEBE361F9C9242008C7976 /* Dosis-Bold.otf */; };
+		22CEBE3C1F9C9C02008C7976 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CEBE3B1F9C9C02008C7976 /* MenuViewController.swift */; };
+		22CEBE3E1F9C9CA8008C7976 /* MenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CEBE3D1F9C9CA8008C7976 /* MenuTableViewCell.swift */; };
+		22CEBE401F9C9F03008C7976 /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CEBE3F1F9C9F03008C7976 /* Menu.swift */; };
 		22F0C65B1F9BCF9F00845869 /* PaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F0C65A1F9BCF9F00845869 /* PaymentViewController.swift */; };
 		2633561C1F9BFB29002AD30A /* UserFlow.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2633561A1F9BFB29002AD30A /* UserFlow.storyboard */; };
 		2634A7211F9C2DEF0001E6F0 /* TruckFeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2634A7201F9C2DEF0001E6F0 /* TruckFeedViewController.swift */; };
@@ -116,6 +119,9 @@
 		22CEBE361F9C9242008C7976 /* Dosis-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Dosis-Bold.otf"; path = "fudar-user/dosis/Dosis-Bold.otf"; sourceTree = "<group>"; };
 		22CEBE391F9C9255008C7976 /* Dosis-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Dosis-Light.otf"; sourceTree = "<group>"; };
 		22CEBE3A1F9C9259008C7976 /* Dosis-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Dosis-Regular.otf"; sourceTree = "<group>"; };
+		22CEBE3B1F9C9C02008C7976 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		22CEBE3D1F9C9CA8008C7976 /* MenuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewCell.swift; sourceTree = "<group>"; };
+		22CEBE3F1F9C9F03008C7976 /* Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
 		22F0C65A1F9BCF9F00845869 /* PaymentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentViewController.swift; sourceTree = "<group>"; };
 		2633561B1F9BFB29002AD30A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/UserFlow.storyboard; sourceTree = "<group>"; };
 		2634A7201F9C2DEF0001E6F0 /* TruckFeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TruckFeedViewController.swift; path = "fudar-user/Controllers/TruckFeedViewController.swift"; sourceTree = SOURCE_ROOT; };
@@ -280,6 +286,7 @@
 				229C48D51F9BFE44006AE32C /* POSRefund.swift */,
 				229C48D71F9BFE45006AE32C /* POSStore.swift */,
 				267209A11F9C486F00B1ED26 /* Truck.swift */,
+				22CEBE3F1F9C9F03008C7976 /* Menu.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -291,6 +298,7 @@
 				2665F1381F9C268D00758B07 /* LoginViewController.swift */,
 				2634A7201F9C2DEF0001E6F0 /* TruckFeedViewController.swift */,
 				22CEBE131F9C6F56008C7976 /* MapViewController.swift */,
+				22CEBE3B1F9C9C02008C7976 /* MenuViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -334,6 +342,7 @@
 			isa = PBXGroup;
 			children = (
 				268FCE771F9C3853001CA3E0 /* TruckTableViewCell.swift */,
+				22CEBE3D1F9C9CA8008C7976 /* MenuTableViewCell.swift */,
 			);
 			path = Subviews;
 			sourceTree = "<group>";
@@ -664,6 +673,7 @@
 				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/Starscream/Starscream.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/SwipeCellKit/SwipeCellKit.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
@@ -687,6 +697,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Starscream.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwipeCellKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
@@ -704,6 +715,7 @@
 			files = (
 				220350061F9C3E3700291AFE /* OrderManager.swift in Sources */,
 				229C48E41F9BFE45006AE32C /* POSCard.swift in Sources */,
+				22CEBE3E1F9C9CA8008C7976 /* MenuTableViewCell.swift in Sources */,
 				229C48E21F9BFE45006AE32C /* POSStore.swift in Sources */,
 				229C48BC1F9BFC93006AE32C /* Utility.swift in Sources */,
 				229C48DE1F9BFE45006AE32C /* POSItem.swift in Sources */,
@@ -731,8 +743,10 @@
 				2665F1251F9C0E3B00758B07 /* LocationManager.swift in Sources */,
 				267209A01F9C3D1A00B1ED26 /* BaseImageView.swift in Sources */,
 				2665F12E1F9C193C00758B07 /* UIFont+Extension.swift in Sources */,
+				22CEBE401F9C9F03008C7976 /* Menu.swift in Sources */,
 				268FCE781F9C3853001CA3E0 /* TruckTableViewCell.swift in Sources */,
 				2665F1301F9C19A000758B07 /* Constants.swift in Sources */,
+				22CEBE3C1F9C9C02008C7976 /* MenuViewController.swift in Sources */,
 				2665F1321F9C1A4A00758B07 /* UIView+Extension.swift in Sources */,
 				2634A7211F9C2DEF0001E6F0 /* TruckFeedViewController.swift in Sources */,
 				2665F1281F9C0FA500758B07 /* UIVIewController+Extension.swift in Sources */,

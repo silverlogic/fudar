@@ -17,6 +17,8 @@ target 'fudar-user' do
   pod 'JVFloatLabeledTextField'
   pod 'CloverConnector-Hackathon-2017', '~> 0.0.4'
   #pod 'ObjectMapper', '~> 2.2'
+  pod 'SwiftyJSON'
+  pod 'SwipeCellKit'  
   pod 'Kingfisher'
 
   target 'fudar-userTests' do

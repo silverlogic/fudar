@@ -9,6 +9,7 @@
 import Foundation
 import CloverConnector_Hackathon_2017
 import Alamofire
+import SwiftyJSON
 
 final class OrderManager {
     
@@ -32,13 +33,19 @@ final class OrderManager {
 
 // MARK: - Network Calls
 extension OrderManager {
-    func getItems() {
-        let endpoint = "orders"
+    
+    func fetchItems(_ completionHandler: @escaping (JSON?, Error?) -> ()){
+        getItems(completionHandler)
+    }
+    
+    func getItems(_ completionHandler: @escaping (JSON?, Error?) -> ()){
+        let endpoint = "tags/KW3TE8QSB4FYE/items"
         let url = "\(API.baseURL)\(endpoint)"
         Alamofire.request(url, method: .get, parameters: nil, encoding: JSONEncoding.default, headers: API.headers)
             .responseJSON { response in
                 if let userResponse = response.result.value {
                     print("** GET ITEMS RESPONSE: \(userResponse)")
+                    completionHandler(JSON(userResponse), nil)
                 }
                 if response.result.isFailure {
                     print(response.result.error as Any)
