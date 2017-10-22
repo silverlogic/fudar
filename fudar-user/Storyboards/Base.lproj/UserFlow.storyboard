@@ -37,7 +37,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="j5n-QN-tls">
-                                <rect key="frame" x="0.0" y="122" width="375" height="545"/>
+                                <rect key="frame" x="0.0" y="124" width="375" height="543"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TruckCell" rowHeight="91" id="196-ua-thR" customClass="TruckTableVielCell" customModule="fudar_user" customModuleProvider="target">
@@ -54,7 +54,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Food Kind- American" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mLm-sg-S92">
-                                                    <rect key="frame" x="86" y="32" width="143" height="17.5"/>
+                                                    <rect key="frame" x="86" y="34" width="121.5" height="19"/>
                                                     <fontDescription key="fontDescription" name="Dosis-Medium" family="Dosis" pointSize="15"/>
                                                     <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
@@ -173,10 +173,10 @@
                                 </prototypes>
                             </tableView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vUn-Qp-dnl">
-                                <rect key="frame" x="0.0" y="64" width="375" height="58"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="60"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Filter" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cH4-fg-cL8">
-                                        <rect key="frame" x="8" y="17" width="37.5" height="21"/>
+                                        <rect key="frame" x="8" y="17" width="34.5" height="21"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="21" id="yvT-de-qfT"/>
                                         </constraints>
@@ -185,12 +185,12 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <searchBar contentMode="redraw" placeholder="Search..." translatesAutoresizingMaskIntoConstraints="NO" id="MjL-LC-rcj">
-                                        <rect key="frame" x="53" y="0.0" width="279" height="58"/>
+                                        <rect key="frame" x="50" y="0.0" width="287" height="60"/>
                                         <color key="barTintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </searchBar>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Iyy-C5-Kb2">
-                                        <rect key="frame" x="332" y="13" width="35" height="32"/>
+                                        <rect key="frame" x="337" y="13" width="30" height="34"/>
                                         <fontDescription key="fontDescription" name="Dosis-Regular" family="Dosis" pointSize="17"/>
                                         <state key="normal" title="Map">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -495,6 +495,7 @@
                                 </state>
                                 <connections>
                                     <action selector="confirmOrderButtonTapped:" destination="cVV-x0-UyF" eventType="touchUpInside" id="bXS-pM-THe"/>
+                                    <segue destination="xlT-1z-Vst" kind="show" id="r00-cA-3Aj"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I0S-Y4-Haq">
@@ -627,7 +628,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="15:45" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VIo-iL-Eo2">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VIo-iL-Eo2">
                                 <rect key="frame" x="67" y="450" width="240" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="jEo-FA-DEW"/>
@@ -969,5 +970,6 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="ULF-6c-G4g"/>
+        <segue reference="r00-cA-3Aj"/>
     </inferredMetricsTieBreakers>
 </document>
