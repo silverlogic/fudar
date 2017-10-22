@@ -27,7 +27,7 @@ final class MenuViewController: UIViewController {
                 checkoutItems.append(menu)
             }
         }
-        print(checkoutItems)
+        performSegue(withIdentifier: "goToCheckoutSegue", sender: self)
     }
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,6 +35,17 @@ final class MenuViewController: UIViewController {
         tableView.delegate = self
         tableView.dataSource = self
         self.navigationController?.navigationBar.isHidden = false
+    }
+}
+
+
+// MARK: - Navigation
+extension MenuViewController {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "goToCheckoutSegue" {
+            guard let controller = segue.destination as? CheckoutViewController else { return }
+            controller.menus = checkoutItems
+        }
     }
 }
 

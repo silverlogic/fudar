@@ -39,4 +39,10 @@ extension MenuTableViewCell {
         menuItemPriceLabel.text = "$\(menuItem.price)"
         menuPurchaseCountLabel.text = "\(menuItem.count)"
     }
+    
+    func configureCellForCheckout(_ title: String, count: Int, price: Int) {
+        menuItemTitleLabel.text = title
+        menuItemPriceLabel.text = "$\(price)"
+        menuPurchaseCountLabel.text = "\(count)"
+    }
 }

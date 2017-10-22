@@ -53,7 +53,7 @@ extension PurchaseManager {
             }
             ar.disableReceiptSelection = store?.transactionSettings.disableReceiptSelection
             ar.disableRestartTransactionOnFail = store?.transactionSettings.disableRestartTransactionOnFailure
-            
+                
             ar.forceOfflinePayment = store?.transactionSettings.forceOfflinePayment
             ar.cardNotPresent = store?.cardNotPresent
             
