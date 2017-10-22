@@ -16,16 +16,17 @@ final class TruckFeedViewController: UIViewController {
 
     // MARK: - Private Instance Variables
     //var trucks: [Truck] = []
+    // some trucks need logos
     var trucks: [[String: Any]] = [
         ["name" : "Bluth's Frozen Banana Stand", "type" : "Dessert", "image" : "Bluths Orig", "rating": 2, "reviews" : 42],
         ["name" : "Naan Stop", "type" : "Indian", "image" : "NaanStop", "rating": 4, "reviews" : 25],
         ["name" : "Truck Norris", "type" : "Fried Chicken", "image" : "TruckNorrisChicken", "rating": 4, "reviews" : 17],
         ["name" : "I Dream of Weenie", "type" : "Hot Dogs and so forth", "image" : "IDreamofWeenie", "rating": 4, "reviews" : 17],
-        ["name" : "Slaw & Order", "type" : "BBQ", "image" : "Slaw&Order", "rating": 5, "reviews" : 73],
-        ["name" : "Easy Slider", "type" : "Burgers", "image" : "easy_logo", "rating": 4, "reviews" : 13],
-        ["name" : "Starchy & Husk", "type" : "Gourmet Corn on the Cob", "image" : "corny", "rating": 3, "reviews" : 25],
-        ["name" : "Pasta Dutchie", "type" : "Northen Italian", "image" : "spaghetti", "rating": 5, "reviews" : 35],
-        ["name" : "General Cheezious", "type" : "Grilled Cheese", "image" : "cheese", "rating": 4, "reviews" : 43]
+        ["name" : "Slaw & Order", "type" : "BBQ", "image" : "Slaw&Order", "rating": 5, "reviews" : 73]
+//        ["name" : "Easy Slider", "type" : "Burgers", "image" : "easy_logo", "rating": 4, "reviews" : 13],
+//        ["name" : "Starchy & Husk", "type" : "Gourmet Corn on the Cob", "image" : "corny", "rating": 3, "reviews" : 25],
+//        ["name" : "Pasta Dutchie", "type" : "Northen Italian", "image" : "spaghetti", "rating": 5, "reviews" : 35],
+//        ["name" : "General Cheezious", "type" : "Grilled Cheese", "image" : "cheese", "rating": 4, "reviews" : 43]
     ]
 
     // MARK: - ViewLifeCycle
