@@ -33,6 +33,15 @@ final class TruckFeedViewController: UIViewController {
         super.viewDidLoad()
         setup()
         self.navigationController?.navigationBar.isHidden = true
+        loginUser()
+    }
+    
+    func loginUser() {
+        AuthenticationManager.shared.login(email: "md@tsl.io", password: "123456", success: { [weak self] (user) in
+            }, failure: { [weak self] (error: Error) in
+                guard let strongSelf = self else { return }
+                strongSelf.showInfoAlert(title:NSLocalizedString("Alert.Error", comment: "error"), subTitle: error.localizedDescription)
+        })
     }
 }
 

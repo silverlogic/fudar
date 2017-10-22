@@ -122,34 +122,16 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewD
         if !(annotation is MKPointAnnotation) {
             return nil
         }
-        
         var annotationView = mapView.dequeueReusableAnnotationView(withIdentifier: "demo")
         if annotationView == nil {
             annotationView = MKAnnotationView(annotation: annotation, reuseIdentifier: "demo")
             annotationView!.canShowCallout = true
             annotationView?.rightCalloutAccessoryView = UIButton(type: .detailDisclosure)
-        }
-        else {
+        } else {
             annotationView!.annotation = annotation
         }
-        
         annotationView!.image = UIImage(named: "icon-annotation")
-        
         return annotationView
-//        let reuseId = "pin"
-//        var pinView = mapView.dequeueReusableAnnotationView(withIdentifier: reuseId) as? MKPinAnnotationView
-//        if pinView == nil {
-//            pinView = MKPinAnnotationView(annotation: annotation, reuseIdentifier: reuseId)
-//            pinView!.canShowCallout = true
-//            pinView!.pinTintColor = .purple
-//            pinView?.image = UIImage(named: "icon-annotation")
-//
-//            //next line sets a button for the right side of the callout...
-//            pinView!.rightCalloutAccessoryView = UIButton(type: .detailDisclosure)
-//        } else {
-//            pinView!.annotation = annotation
-//        }
-//        return pinView
     }
     
     func mapView(_ mapView: MKMapView, annotationView view: MKAnnotationView,
