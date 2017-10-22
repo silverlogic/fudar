@@ -37,7 +37,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="j5n-QN-tls">
-                                <rect key="frame" x="0.0" y="124" width="375" height="543"/>
+                                <rect key="frame" x="0.0" y="122" width="375" height="545"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TruckCell" rowHeight="91" id="196-ua-thR" customClass="TruckTableVielCell" customModule="fudar_user" customModuleProvider="target">
@@ -50,11 +50,11 @@
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Truck Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7IN-S9-0z1">
                                                     <rect key="frame" x="86" y="8" width="212" height="22"/>
                                                     <fontDescription key="fontDescription" name="Dosis-Bold" family="Dosis" pointSize="17"/>
-                                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Food Kind- American" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mLm-sg-S92">
-                                                    <rect key="frame" x="86" y="34" width="121.5" height="19"/>
+                                                    <rect key="frame" x="86" y="32" width="143" height="17.5"/>
                                                     <fontDescription key="fontDescription" name="Dosis-Medium" family="Dosis" pointSize="15"/>
                                                     <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
@@ -173,10 +173,10 @@
                                 </prototypes>
                             </tableView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vUn-Qp-dnl">
-                                <rect key="frame" x="0.0" y="64" width="375" height="60"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="58"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Filter" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cH4-fg-cL8">
-                                        <rect key="frame" x="8" y="17" width="34.5" height="21"/>
+                                        <rect key="frame" x="8" y="17" width="37.5" height="21"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="21" id="yvT-de-qfT"/>
                                         </constraints>
@@ -185,12 +185,12 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <searchBar contentMode="redraw" placeholder="Search..." translatesAutoresizingMaskIntoConstraints="NO" id="MjL-LC-rcj">
-                                        <rect key="frame" x="50" y="0.0" width="287" height="60"/>
+                                        <rect key="frame" x="53" y="0.0" width="279" height="58"/>
                                         <color key="barTintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </searchBar>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Iyy-C5-Kb2">
-                                        <rect key="frame" x="337" y="13" width="30" height="34"/>
+                                        <rect key="frame" x="332" y="13" width="35" height="32"/>
                                         <fontDescription key="fontDescription" name="Dosis-Regular" family="Dosis" pointSize="17"/>
                                         <state key="normal" title="Map">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -508,7 +508,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="oFt-RL-0mF" kind="show" id="BQ5-fl-GL0"/>
+                                    <segue destination="oFt-RL-0mF" kind="show" id="xO3-jf-Bkm"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -553,7 +553,7 @@
             </objects>
             <point key="canvasLocation" x="2572" y="1070.9145427286358"/>
         </scene>
-        <!--Credit Card View Controller-->
+        <!--Add Credit Card-->
         <scene sceneID="kUB-Nz-oz3">
             <objects>
                 <viewController id="oFt-RL-0mF" customClass="CreditCardViewController" customModule="fudar_user" customModuleProvider="target" sceneMemberID="viewController">
@@ -592,6 +592,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6MB-Vq-nDr"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Add Credit Card" id="aAg-qn-3r8"/>
                     <connections>
                         <outlet property="cardFormView" destination="MqH-0l-JhN" id="GyA-9a-mSI"/>
                         <outlet property="purchaseOrderButton" destination="v4d-cN-zYd" id="mbs-mI-vEk"/>
@@ -599,7 +600,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nG3-ee-xOl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3261.5999999999999" y="1077.2113943028487"/>
+            <point key="canvasLocation" x="3287" y="1071"/>
         </scene>
         <!--Nearby Businesses-->
         <scene sceneID="9jc-yL-SZy">

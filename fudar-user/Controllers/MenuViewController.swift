@@ -20,6 +20,11 @@ final class MenuViewController: UIViewController {
     // MARK; - Attributes
     var menus = [Menu]()
     var checkoutItems = [Menu]()
+    lazy var refreshControl: UIRefreshControl = {
+        let refreshControl = UIRefreshControl()
+        refreshControl.addTarget(self, action: #selector(MenuViewController.handleRefresh(refreshControl:)), for: UIControlEvents.valueChanged)
+        return refreshControl
+    }()
     
     @IBAction func checkoutButtonTapped(_ sender: Any) {
         for menu in menus {
@@ -31,10 +36,13 @@ final class MenuViewController: UIViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-        loadData()
+        loadData { () -> Void in
+            print("data loaded")
+        }
         tableView.delegate = self
         tableView.dataSource = self
         self.navigationController?.navigationBar.isHidden = false
+        tableView.addSubview(self.refreshControl)
     }
 }
 
@@ -106,7 +114,7 @@ extension MenuViewController: SwipeTableViewCellDelegate {
 
 // MARK: - Private Instance Methods
 extension MenuViewController {
-    func loadData() {
+    func loadData(_ completionHandler: @escaping () -> Void) {
         OrderManager.shared.fetchItems() { [weak self] responseObject, error in
             guard let strongSelf = self else { return }
             if let json = responseObject {
@@ -119,7 +127,18 @@ extension MenuViewController {
                     strongSelf.menus.append(menu)
                 }
                 strongSelf.tableView.reloadData()
+                completionHandler()
             }
         }
+    }
+    
+    @objc func handleRefresh(refreshControl: UIRefreshControl) {
+        self.menus.removeAll()
+        self.tableView.reloadData()
+        loadData {
+            self.tableView.reloadData()
+            refreshControl.endRefreshing()
+        }
+
     }
 }
