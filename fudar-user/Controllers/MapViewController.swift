@@ -24,7 +24,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewD
         locationManager = CLLocationManager()
         locationManager!.delegate = self
         self.navigationController?.navigationBar.isHidden = false
-        self.navigationController?.navigationItem.title = "Nearby Businesses"
+        self.navigationController?.navigationItem.title = "Nearby Food Trucks"
 
         if CLLocationManager.authorizationStatus() == .authorizedWhenInUse {
             locationManager!.startUpdatingLocation()

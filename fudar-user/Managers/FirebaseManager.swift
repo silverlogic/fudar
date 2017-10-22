@@ -61,14 +61,36 @@ extension FirebaseManager {
             failure(error)
         }
     }
+
+    func fetchPosItems(success: @escaping (_ success: [POSItem])-> Void, failure: @escaping (_ error: Error)-> Void) {
+        ref.child("users/\((Auth.auth().currentUser?.uid)!)/orders").observeSingleEvent(of: .value, with: { (snapshot) in
+            let valueDict = snapshot.value as? NSDictionary
+            var items: [POSItem] = []
+            for (largeKey, value) in valueDict! {
+                let item: [String: Any] = value as! [String : Any]
+                for (_, value) in item {
+                    var anotherItem: [String: Any] = value as! [String : Any]
+                    let menuItem = anotherItem["item"]! as! String
+                    let price = anotherItem["price"]! as! NSNumber
+                    let itemId = largeKey as! String
+                    print(itemId)
+                    let posItem = POSItem(id: itemId, name: menuItem, price: Int(Double(price)), taxRate: 0.0)
+                    items.append(posItem)
+                }
+            }
+            success(items)
+        }) { (error: Error) in
+            failure(error)
+        }
+    }
 }
 
 
 // MARK: - Post/Write Methods
 extension FirebaseManager {
-    func addOrder(userId: String, item: String, price: Double, success: @escaping (_ success: Bool) -> Void, failure: @escaping (_ error: Error) -> Void) {
-        let postRef = self.ref.child("users/\(userId)/orders")
-        let menuItem: [NSString : Any] = ["item" : item, "price" : price]
+    func addOrder(menu: Menu, success: @escaping (_ success: Bool) -> Void, failure: @escaping (_ error: Error) -> Void) {
+        let postRef = self.ref.child("users/\((Auth.auth().currentUser?.uid)!)/orders")
+        let menuItem: [NSString : Any] = ["item" : menu.name, "price" : menu.price, "itemId" : menu.itemId]
         let order: [NSString : Any] = ["item" : menuItem]
         let newPieceRef = postRef.childByAutoId()
         newPieceRef.updateChildValues(order) { (error: Error?, reference: DatabaseReference) in
